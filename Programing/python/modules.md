@@ -1,0 +1,2 @@
+Un modulo es código que podemos importar para utilizar las funciones que proveen lo que nos ayuda a reciclar código y dividir nuestro programa en varios archivos, un modulo puede tener varios 
+miembros que son como mini módulos que podemos importar individualmente si solo necesitamos la funcionalidad de ese mini modulo 

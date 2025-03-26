@@ -1,0 +1,2 @@
+Lo primero a hacer es tener claro que se desea hacer, para esto vamos a escribir tres cosas, primero el usuario que va a utilizar el reporte, segundo la motivación para usar el reporte y por ultimo las 
+preguntas que el reporte busca responder  

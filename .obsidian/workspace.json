@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "3837d68154ce6d44",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d20ece6f70006a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b03b63e190da3947",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "semestres/semestre 6/Circuitos digitales/dispositvos electronicos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dispositvos electronicos"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "158c0b80a4404f6b",
+    "type": "split",
+    "children": [
+      {
+        "id": "77308d4ef386a0bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec721d39c9a03f89",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f4986378e003c8a6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ae7ba909bf7b7d8b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "62e9b131728b8639",
+    "type": "split",
+    "children": [
+      {
+        "id": "b49ff21bce652bb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06da039b351c126f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Quinto semestre uwu.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Quinto semestre uwu"
+            }
+          },
+          {
+            "id": "09c977c1714134f3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Quinto semestre uwu.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Quinto semestre uwu"
+            }
+          },
+          {
+            "id": "fda3be3cacc17144",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "77709d69595ae6f0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "reconocimiento ascendente.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of reconocimiento ascendente"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "b03b63e190da3947",
+  "lastOpenFiles": [
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326082831.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326081627.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326080741.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326080243.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326072149.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326072113.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326071859.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326071723.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326071517.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326071308.png",
+    "semestres/semestre 6/Circuitos digitales/attachments/Pasted image 20250326070858.png",
+    "semestres/semestre 6/Circuitos digitales/tipos de conexiones electricas.md",
+    "semestres/semestre 6/Circuitos digitales/dispositvos electronicos.md",
+    "semestres/semestre 6/Sexto semestre owo.md",
+    "semestres/semestre 6/Base de datos y laboratorio/algebra relacional.md",
+    "semestres/semestre 5/fisica-ondas/ondas en una barra.md",
+    "semestres/semestre 5/fisica-ondas/formulas parciales/formulas para el primer parcial.md",
+    "semestres/semestre 5/fisica-ondas/Indice física de ondas.md",
+    "semestres/semestre 6/Horario.md",
+    "semestres/semestre 6/modelos 1/lab numpy.md",
+    "semestres/semestre 6/modelos 1",
+    "Programing/python/numpy.md",
+    "semestres/semestre 6/indice modelos 1.md",
+    "semestres/semestre 6/Arquitectura de software/que es la arquitectura.md",
+    "semestres/semestre 6/Arquitectura de software/arquitectura SW.md",
+    "semestres/semestre 6/Comunicaciones y laboratorio/elementos-cableado.md",
+    "Personal-dev/tasks.md",
+    "Personal-dev/análisis del día.md",
+    "Personal-dev/Plan día día.md",
+    "Personal-dev",
+    "semestres/semestre 6/Arquitectura de software/temario clase 1.md",
+    "semestres/semestre 6/Indice arquitectura de software.md",
+    "semestres/semestre 6/Arquitectura de software/Patrones de diseño.md",
+    "Programing/Java/record.md",
+    "Programing/Java/basics.md",
+    "Programing/Java/Clases y objetos.md",
+    "semestres/semestre 6/Fundamentos de sistemas de informacion/Monitoreo e inteligencia de negocio  KPI y OKR.md",
+    "semestres/semestre 6/Fundamentos de sistemas de informacion/CRM vs ERP.md",
+    "semestres/semestre 6/Fundamentos de sistemas de informacion/attachments",
+    "semestres/semestre 6/Circuitos digitales/attachments",
+    "semestres/semestre 6/Circuitos digitales",
+    "semestres/semestre 6/Proyecto integrador 1",
+    "semestres/semestre 6/Base de datos y laboratorio",
+    "semestres/semestre 6/Comunicaciones y laboratorio",
+    "Programing/Java/attachments",
+    "Programing/Java"
+  ]
+}

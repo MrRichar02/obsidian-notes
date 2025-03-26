@@ -1,0 +1,23 @@
+{
+  "vimMode": true,
+  "showLineNumber": true,
+  "foldIndent": true,
+  "strictLineBreaks": false,
+  "readableLineLength": false,
+  "autoConvertHtml": false,
+  "autoPairBrackets": true,
+  "smartIndentList": true,
+  "autoPairMarkdown": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": true,
+    "margin": "1",
+    "downscalePercent": 100
+  },
+  "newFileLocation": "root",
+  "newFileFolderPath": "pasted-images",
+  "attachmentFolderPath": "./attachments",
+  "livePreview": true
+}
