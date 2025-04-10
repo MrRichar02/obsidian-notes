@@ -21,7 +21,7 @@ Link grupo whats app: https://chat.whatsapp.com/InF98jToPHR0fPxVEhL4ct
 
 Link clase: https://udearroba.zoom.us/j/91952714313
 
-[[Indice comunicaciones y laboratorio]]
+[[Indice comunicaciones y laboratorion]]
 
 Link grupo whats app: https://chat.whatsapp.com/LtlSoQwas3M2cbMQQLoIf4
 

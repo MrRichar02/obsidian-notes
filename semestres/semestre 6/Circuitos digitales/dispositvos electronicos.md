@@ -95,3 +95,7 @@ Una buena corriente para un led es cercana a 20 mA, basado en eso podemos despej
 ![[Pasted image 20250326082831.png]]
 
 La resistencia de un led suele estar entre 100$\ohm$ y 300$\ohm$ para un voltaje de 5 V
+
+
+
+[[Transistor]]
