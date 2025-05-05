@@ -27,3 +27,18 @@ Nota Los nombres de la red tienen números en sus N pero tienen 0 en sus H, si n
 |       |                  |               |                 |                 |                 |               |
 |       |                  |               |                 |                 |                 |               |
 |       |                  |               |                 |                 |                 |               |
+
+![[Pasted image 20250412161453.png]]
+
+![[Pasted image 20250412161435.png]]
+
+## Otro ejemplo de diseño de redes(falta el cuarto paso) 
+![[Pasted image 20250426154944.png]]
+
+## otro ejemplo 
+
+![[Pasted image 20250505120829.png]]
+
+## otro ejemplo 
+
+![[Pasted image 20250505120905.png]]

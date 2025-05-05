@@ -11,7 +11,7 @@ Longitud de onda $\large{\lambda = 2 \pi / K}$ cada cuanto se repite el recorrid
 
 Numero de onda  K =  $\large{2 \pi / \lambda}$ opuesto a la longitud de onda
 
-Rapidez de una onda V = espacio/tiempo = $\large{\lambda / T = \lambda f}$
+jRapidez de una onda V = espacio/tiempo = $\large{\lambda / T = \lambda f}$
 
 
 Velocidad y aceleración de los puntos del medio

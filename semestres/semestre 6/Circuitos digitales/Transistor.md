@@ -63,7 +63,6 @@ Caso 3:
 
 ![[Pasted image 20250402073108.png]]
 
-
 Los transistores pueden disipar potencia(=calor) lo que significa que los transistores generan calor adentro de los dispositivos electrónicos, potencia transistor: ![[Pasted image 20250402080322.png]]. Normalmente los dispositivos electrónicos tienen cientos de miles o millones de transistores, lo que implica mucho calor
 
 ## Aplicaciones del BJT:
