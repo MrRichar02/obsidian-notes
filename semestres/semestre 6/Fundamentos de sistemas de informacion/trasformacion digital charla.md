@@ -46,3 +46,4 @@ Tecnológico
 Ecológico
 Legal
 
+Frase: si un quiere respuestas poderosas se deben hacer preguntas poderosas
