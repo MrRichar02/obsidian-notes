@@ -33,3 +33,16 @@ Optimizar cadena de valor
 
 paso para la transformación digital en la cadena de valor 
 ![[Pasted image 20250506070218.png]]
+
+Análisis de matriz DOFA
+![[Pasted image 20250506071907.png]]
+
+## Análisis pestel:
+
+Político
+Económico
+Social
+Tecnológico
+Ecológico
+Legal
+
