@@ -25,3 +25,8 @@ identificar primeras necesidades tecnológicas(digitalización)
 Dar el primer beso:
 
 tomar las ideas del punto anterior, priorizarlas y empezar a implementarlas 
+
+---
+
+Optimizar cadena de valor 
+![[Pasted image 20250506064856.png]]
