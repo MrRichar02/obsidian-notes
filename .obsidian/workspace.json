@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "semestres/semestre 6/Fundamentos de sistemas de informacion/trasformacion digital charla.md",
+                "file": "semestres/semestre 6/modelos 1/lab-302.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trasformacion digital charla"
+              "title": "lab-302"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,15 +195,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b03b63e190da3947",
+  "active": "e4176516442fafbb",
   "lastOpenFiles": [
     "semestres/semestre 6/Fundamentos de sistemas de informacion/trasformacion digital charla.md",
+    "semestres/semestre 6/Base de datos y laboratorio/Lab 3 db.md",
+    "semestres/semestre 6/Sexto semestre owo.md",
     "semestres/semestre 6/Fundamentos de sistemas de informacion/attachments/Pasted image 20250506071907.png",
     "semestres/semestre 6/Fundamentos de sistemas de informacion/attachments/Pasted image 20250506070218.png",
     "semestres/semestre 6/Fundamentos de sistemas de informacion/attachments/Pasted image 20250506064856.png",
     "semestres/semestre 6/Base de datos y laboratorio/algebra relacional.md",
-    "semestres/semestre 6/Base de datos y laboratorio/Lab 3 db.md",
-    "semestres/semestre 6/Sexto semestre owo.md",
     "semestres/semestre 6/Base de datos y laboratorio/Taller de SQL.md",
     "semestres/semestre 6/Base de datos y laboratorio/lab-1.md",
     "semestres/semestre 6/Comunicaciones y laboratorio/direcciones-ip.md",
