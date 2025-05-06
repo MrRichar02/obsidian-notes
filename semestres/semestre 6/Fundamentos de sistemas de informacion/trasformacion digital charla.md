@@ -30,3 +30,6 @@ tomar las ideas del punto anterior, priorizarlas y empezar a implementarlas
 
 Optimizar cadena de valor 
 ![[Pasted image 20250506064856.png]]
+
+paso para la transformación digital en la cadena de valor 
+![[Pasted image 20250506070218.png]]
