@@ -35,7 +35,8 @@
               "title": "Lab 3 db"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,10 +181,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b03b63e190da3947",
+  "active": "c2948c50769734db",
   "lastOpenFiles": [
-    "semestres/semestre 6/Base de datos y laboratorio/Lab 3 db.md",
     "semestres/semestre 6/Sexto semestre owo.md",
+    "semestres/semestre 6/Base de datos y laboratorio/Lab 3 db.md",
     "semestres/semestre 6/modelos 1/lab-302.md",
     "semestres/semestre 6/Fundamentos de sistemas de informacion/trasformacion digital charla.md",
     "semestres/semestre 6/Fundamentos de sistemas de informacion/attachments/Pasted image 20250506071907.png",
