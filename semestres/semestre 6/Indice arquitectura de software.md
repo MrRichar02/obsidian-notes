@@ -6,5 +6,4 @@ https://www.weetechsolution.com/blog/role-of-software-architecture-in-software-e
 
 [[temario clase 1]]
 
-
-
+![[Pasted image 20250509175220.png]]
