@@ -12,4 +12,22 @@ XP, extreme programming, Scrum, Kanban, LEAN, Evo, DSDM Dynamic Systems Developm
 ## Otros
 
 - refactoring
-- functional programming, AOP, SOA, Cloud computing, Mobile apps, software products lines/software factory, 
+- functional programming, AOP, SOA, Cloud computing, Mobile apps, software products lines/software factory, chatgpt/GH Copilot, LLM, DevOps, Semantic Web, Web3, Blockchain
+
+## SOA(arquitectura orientada a servicios)
+
+## Cloud
+
+### Capas
+
+- infrastructure as a service(IaaS)
+- platform as a Service(PaaS) 
+- backend as a service(BaaS)
+- software as a service(SaaS)
+
+### Modelos
+
+- Publicas
+- Privada
+- Hibridas
+
