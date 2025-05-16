@@ -84,7 +84,7 @@ ahora hagamos el ejemplo donde la fuente se aleja del observador
 
 $\Large{ f = f'(} \Huge{\frac{(-v) - v_0}{(-v) - v_f}} \Large{)}$ 
 
-La dirección tanto del observador y la fuente es en el sentido positivo de el eje por lo 
+La dirección tanto del observador y la fuente es en el sentido positivo de el eje por lo 20*sqrt(23)
 que lo dejamos igual, mientras que la dirección del sonido que se dirige al observador
 va en el sentido negativo del eje por lo que se agrega el menos 
 
