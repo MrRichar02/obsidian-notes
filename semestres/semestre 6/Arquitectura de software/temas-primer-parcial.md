@@ -186,3 +186,24 @@ comunicaciones entre components y es especificados por protocolos.
 • Cada Sistema de software tiene elementos conectores que se comunican a través de diferentes capas.
 
 • Las librerías de terceros dan servicios compartidos que proveen servicios core como estructuras de datos (XML, JSON, etc.), logging, debugging, y otros servicios.
+
+## Definición de arquitectura de software
+
+• Boehm, et al 1995
+• Una AS comprende: una colección de componentes de SW y de sistema, conexiones, restricciones.
+
+
+## Requisitos no funcionales
+
+- Adecuación funcional
+- Eficiencia de desempeño
+- Compatibilidad
+- Usabiliad
+- Fiabilidad
+- Seguridad
+- Mantenibilidad
+- Portabilidad
+
+## Principios de una buena arquitectura
+
+- Útil 
