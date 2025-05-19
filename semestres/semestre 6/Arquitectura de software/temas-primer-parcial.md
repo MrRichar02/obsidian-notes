@@ -150,3 +150,39 @@ Interfaz ISO/IEC 2382:2015 "frontera compartida entre dos unidades funcionales, 
 - Librerías estándar del lenguaje de programación 
 - Funcionalidad del sistema operativo 
 - El propio código
+
+
+## Definición de Arquitectura de software
+
+Según Neal Ford, Mark Richards & Raju Gandhi: la arquitectura de software tiene 4 dimensiones en la que se define la forma física general y la estructura de un sistema de software
+
+## Definición de Arquitectura de software
+
+• Garlan & Shaw 1993
+• Sugieren que es un nivel de diseño que trasciende algoritmos y estructuras de datos...
+• Factores estructurales incluyen:
+
+❑organización general y estructura global de control
+❑ protocolos de comunicación, sincronización y acceso a datos
+❑asignación de funcionalidades a elementos de diseño
+❑distribución física
+❑composición de elementos de diseño
+❑escalamiento y rendimiento
+❑selección entre alternativas de diseño”
+
+## Conectores
+
+•Diferentes formas de conexión de bajo nivel (synchronous, asynchronous, peer-to-peer, event broadcast) son diferentes aun representados como llamadas a procedimientos en el lenguaje de programación. Los conectores pueden codificarse en diferentes lenguajes al los que se usan en los componentes.
+
+## Filosofía de Shaw
+
+Componentes — unidades compiladas (modulo, estructura de datos, filtros)
+• — son identificados por interfaces.
+• Conectores — (RPC (Remote Procedure Call), eventos, tuberias) — media las
+comunicaciones entre components y es especificados por protocolos.
+
+## Elementos conectores 
+
+• Cada Sistema de software tiene elementos conectores que se comunican a través de diferentes capas.
+
+• Las librerías de terceros dan servicios compartidos que proveen servicios core como estructuras de datos (XML, JSON, etc.), logging, debugging, y otros servicios.
