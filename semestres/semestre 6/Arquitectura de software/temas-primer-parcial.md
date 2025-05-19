@@ -258,3 +258,89 @@ Problemas por la falta de Arquitectura
 - Concurrency and Transactions
 - Configuration Management
 - Coupling and Cohesion 
+- Data Access
+- Exception Management
+- Logging and instrumentation
+- User Experience
+- Validation
+- Workflow
+
+## Trends
+
+- Dynamic Languages
+- Functional Programming
+- Green IT
+- Parallel Computing
+- User Empowerment
+- User Experience
+
+## Arch Styles
+
+- Client/server
+- Component Based Architecture
+- Distributed Architecture
+- Layered
+- Object Oriented
+- P2P/Grid
+- S+S
+- SOA
+
+## Layers
+
+- Presentation Layer
+- Business Layer
+- Data Layer
+- Service Layer
+
+## Quality Attributes
+
+ - Manageability
+ - Performance
+ - Reliability
+ - Security
+ - Testability
+
+## Deployment
+
+- Patterns
+- Qualities
+- Scenarios
+
+## Patterns
+
+- App types
+- Qualities
+- Layers
+- Arch Frame
+
+## Transaccionalidad
+
+### BD relacional
+
+- Commit/Rollback
+- Pruebas ACID
+- Entidad relación
+
+### NoSQL
+
+- JSON
+- Documentales
+- clave-valor
+- grafos
+- series de tiempo
+- teorema CAP
+- teorema de brewer
+
+### In-memory
+
+### New SQL
+
+### BD vectoriales
+
+## Oauth 2.0
+
+## Single Sing On
+
+
+# Segunda Presentación
+
