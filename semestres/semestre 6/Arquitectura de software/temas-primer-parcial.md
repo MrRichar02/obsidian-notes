@@ -77,4 +77,76 @@ XP, extreme programming, Scrum, Kanban, LEAN, Evo, DSDM Dynamic Systems Developm
 • " Architecture is all you need to know about a system that is not contained in
 the code. " (G. Booch)
 
-## Qué es una 
+## Qué es una Arquitectura?
+
+- Modelo que contiene un conjunto de Componentes y sus relaciones.
+- Define el marco para el diseño y desarrollo de Software
+- Plano Regulador.
+- Da Guías de Diseño.
+- Permite enfocar esfuerzos para la implementación.
+- Se concentra en requerimientos no funcionales
+- Los requerimientos funcionales se satisfacen mediante modelado y diseño de la aplicación
+
+## Qué no es una Arquitectura?
+
+• Una normativa madura (Aún se encuentra en evolución)
+• Igual en la academia y en la industria (Diferentes)
+• Diseño de software con UML (No lo es todo)
+• Ocurre en algún punto entre la elicitación de requerimientos y la especificación de casos de uso, o entre éstos y el diseño (El proceso de la Arquitectura cubre todas las fases)
+• Naturalmente vinculada a metodología(RUP) (Se puede adaptar a todas las metodologías de desarrollo por ejemplo AGILE).
+• Naturalmente relacionada con modelado Orientado a Objetos (Existen otros paradigmas como web services, microservicios, SOA, etc).
+• Las herramientas arquitectónicas generan el código de la aplicación (Las herramientas CASE solo son un soporte).
+
+## Definición Arquitectura
+
+•Definition: (IEEE Std 1471): Software Architecture is the fundamental organization of a system represented by its components, the relationships between them and the environment and the principles that guide its design and evolution.
+
+### Subsystem
+
+•  A subsystem is a set of collaborating components performing a given task
+• A subsystem is considered a separate entity within a software architecture
+•  It performs its designated task by interacting with other subsystems and components...
+
+### Components
+
+• A component is an encapsulated part of a software system
+• A component has an interface
+• Components serve as the building blocks for the structure of a system
+• At a programming-language level, components may be represented as modules, classes, objects or as a set of related functions
+
+### (DES) Composición y refinamiento
+
+• Los componentes pueden descomponerse, a su vez, en sub-componentes según, por ejemplo:
+• ‣ Tipos de datos importantes.
+• ‣ Capas.
+
+• ‣ Pieza más pequeña de funcionalidad auto- contenida.
+
+... El refinamiento debe estar libre de redundancia
+
+‣ Componentes de caja negra con fuertes dependencias→ agregados en un componente de caja blanca común.
+
+### Interfaz/API (Application Programming Interface)
+
+Interfaz ISO/IEC 2382:2015 "frontera compartida entre dos unidades funcionales, definida por varias características relativas a funciones, intercambios de señales físicas y otras características".
+
+"Contrato" al que deben atenerse los componentes. Punto de acceso bien definido a un componente (o sistema). Aportar una descripción precisa y completa de las interfaces: ‣ Sintaxis, estructuras de datos, comportamiento frente a errores, características de calidad, tecnologías, protocolos, restricciones, semántica, ...
+
+### SPI (Service Provider Interface)
+
+• A diferencia de las API que se centran en definir las interacciones entre componentes, SPI es un conjunto de protocolos, contratos e interfaces dentro de una biblioteca o marco de software.
+
+• SPI permite a los desarrolladores ampliar o reemplazar ciertas funcionalidades dentro de un sistema sin modificar sus componentes principales.
+
+## Definición de Arquitectura de SW
+
+- Booch, Rumbaugh, Jacobson 1999
+•Una arquitectura es el conjunto de decisiones significativas acerca de la organización de un sistema de SW, la selección de los elementos estructurales y sus interfaces con las que el sistema se compone, junto con el comportamiento como lo especifica la colaboración de estos elementos, la composición de estos elementos estructurales y de comportamiento en subsistemas progresivamente más grandes y el estilo arquitectónico que guía esta organización (UML User Guide, Addison-Wesley 1999).
+
+
+### Elementos Estructurales
+
+- Librerías de terceros
+- Librerías estándar del lenguaje de programación 
+- Funcionalidad del sistema operativo 
+- El propio código
