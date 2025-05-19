@@ -207,3 +207,54 @@ comunicaciones entre components y es especificados por protocolos.
 ## Principios de una buena arquitectura
 
 - Útil 
+- Estable
+- Agraciado
+
+## Beneficios de una arquitectura de software
+
+### Manifesta las decisiones de diseño Tempranas
+
+• Define restricciones de implementación
+• Inhibe o activa los atributos de calidad del sistema
+• Facilita razonar acerca del manejo del cambio
+• Ayuda a la evolución del prototipado
+• Alcanza más exactitud en estimación de costos y agenda de proyectos de Software
+
+### Las arquitecturas como un modelo reusable y transferible
+• Las líneas de productos de software comparten una arquitectura en común.
+• Los sistemas se pueden construir usando grandes y extensos elementos de desarrollo
+• Menos es más: vocabulario restringido de alternativas de diseño
+• Una arquitectura permite el desarrollo basado en plantillas (templates)
+• Una arquitectura puede ser la base para el entrenamiento de nuevos miembros del equipo de desarrollo.
+
+### Problemas por la falta de Arquitectura 
+
+Problemas por la falta de Arquitectura
+- Rendimiento inadecuado de las apps.
+- Mantenimiento costoso
+- Diseño inadecuado para evolucionar
+- Reutilización limitado
+- Proyectos ineficientes (el arquitecto particiona el trabajo de tal manera que cada ingeniero debe comunicarse con todos los demás para hacer su trabajo)
+- Afecta la calidad de los sistemas de software.
+- No hay interoperabilidad
+
+
+## App Types
+
+- Mobile
+- RIAs
+- Rich Clients
+- Service
+- Web
+- Office based applications (OBA)
+- Sharedpoints LOBs
+
+
+## App Arch Frame
+
+- Authentication and Authorization
+- Caching/ State
+- Communication
+- Concurrency and Transactions
+- Configuration Management
+- Coupling and Cohesion 
