@@ -1,4 +1,3 @@
-
 ## Fundamentos de Sistemas de Información
 
 Link clase: https://udea.zoom.us/j/96066678530
