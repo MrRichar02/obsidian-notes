@@ -446,3 +446,34 @@ Lasagna-oriented architecture (aka layered monolith)
 
 Ravioli-oriented architecture (aka microservices)
 
+## Software Architecture evolution
+
+- Assembly
+- Compiled Languages: Procedural, OO, Functional
+- Distributed: Client-server, nTier, RPC, ESB, messaging
+- Runtimes: Java - .NET, Dynacmic Languages, Application server, Virtualisation-containers
+- Internet: SoAP-SOA, Javascript AJAX, Rest, Microservices, reactive
+- NoSQL: Document, GRAPH, HADOOP
+- CLOUD: IAAS, SAAS, PAAS, Serverless
+- APPS: iOS, ANDROID, Precompued
+- DEVOPS: Automation, Continnous Delivery, Infraestructure As code
+
+## Dominios Arquitectónicos
+
+Los "dominios" arquitectónicos son espacios de problema con un alcance distinto, primero se define en que partes de puede dividir la arquitectura de software, luego las define y a cada una le define reglas y estructura ademas se describen los diferentes aspectos del sistema TI
+
+## Otros dominios arquiectónicos más allá de la arquitectura de software
+
+La pirámide de arquitectura de Dern establece una relación jerárquica entre los diferentes dominios arquitectónicos de una empresa.
+
+Las capas de esta pirámide son estrategia, arquitectura del negocio, arquitectura de la información, arquitectura de la aplicación y arquitectura de la infraestructura. La arquitectura de software va en la parte de arquitectura de la aplicación
+
+Otros dominios arquitectónicos:
+• ‣ Arquitectura TI corporativa.
+• ‣ Arquitectura de procesos de negocio.
+• ‣ Arquitectura de hardware.
+• ‣ Arquitectura de procesador.
+
+### Arquitectura funcional frente a arquitectura técnica
+
+¿Qué hace el sistema informático desde la perspectiva del dominio de la aplicación?
