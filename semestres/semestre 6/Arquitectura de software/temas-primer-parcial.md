@@ -538,3 +538,50 @@ Se ve influenciado por el líder de mercadeo, el gerente del proyecto, el usuari
 
 • ¡Se debe procurar una clara distribución de responsabilidades y vías de comunicación bien definidas entre todos los roles!
 
+## Factores de influencia
+
+### Relativos al producto
+
+- Prestaciones funcionales
+- Requisitos de calidad
+
+### Relativos a la organización
+
+- Organización y Estructura
+- Recursos
+- Estándares
+- Legislación
+
+### Tecnológicos
+
+- Infraestructura
+- Hardware
+
+## Factores de influencia de la organización y estructura
+
+• Estructura organizativa de la organización.
+• Estructura organizativa del equipo de proyecto.
+• Responsables de la toma de decisiones.
+• Asociaciones / Cooperación.
+• Desarrollo interno o externo (por ejemplo, subcontratado).
+• Producto comercial o uso interno.
+
+## Ley de Conway
+
+"Las organizaciones que diseñan sistemas... se ven obligadas a producir diseños que son copias de las estructuras de comunicación de estas organizaciones".
+
+## Factores de influencia tecnológicos
+
+- Infraestructura de software
+- Infraestructura de hardware
+- Normas de programación
+- Estructuras de datos
+- Entorno de operación
+- Arquitectura de referencia
+- Librerías, marcos de trabajo y componentes
+- Disponibilidad de entorno de ejecución
+- Interfaces de programación
+- Interfaz gráfica de usuario
+- Protocolos de comunicación
+- Lenguaje de programación
+
