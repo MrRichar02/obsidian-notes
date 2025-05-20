@@ -477,3 +477,64 @@ Otros dominios arquitectónicos:
 ### Arquitectura funcional frente a arquitectura técnica
 
 ¿Qué hace el sistema informático desde la perspectiva del dominio de la aplicación?
+¿Cómo funciona desde la perspectiva de quien implement u opera el sistema?
+
+### Arquitectura abstracta frente a arquitectura concreta
+
+¿Qué reglas ayudan a estructurar y restringir los componentes funcionales y técnicos?
+¿Qué componentes funcionales y técnicos concretos se pueden identificar?
+
+# Tercera presentación
+
+## Arquitecto de software
+
+• El arquitecto de software tiene la responsabilidad global de dirigir las principales decisiones técnicas, expresadas como la arquitectura de software.
+
+• Esto habitualmente incluye la identificación y la documentación de los aspectos arquitectónicamente significativos del sistema, que incluye las "vistas" de requisitos, diseño, implementación y despliegue del sistema.
+
+## Que es un Arquitecto de software?
+
+### Rational Unified Process
+
+Arquitecto es un rol en un proyecto de desarrollo de software el cual es responsable de:
+
+– Liderar el proceso de arquitectura.
+
+– Producir los artefactos necesarios: Documento de descripción de arquitectura
+
+– Modelos y prototipos de arquitectura.
+
+### Oracle SL-425
+
+El arquitecto:
+
+– Visualiza el comportamiento del sistema.
+
+– Crea los planos del sistema.
+
+– Define la forma en la cual los elementos del sistema trabajan en conjunto.
+
+– Responsable de integrar los requerimientos no-funcionales (NRFs) en el sistema.
+
+## Influencias hacia y desde la arquitectura
+
+Se ve influenciado por los stakeholders, por la development organization, por el technical environment y por la architect's experience
+
+## Influencias de los participantes sobre el proyecto
+
+Se ve influenciado por el líder de mercadeo, el gerente del proyecto, el usuario final, el soporte aplicativo y el cliente
+
+## Relaciones del arquitecto
+
+• VENTAJAS:
+
+• ‣ Mayor comprensión de los asuntos de interés adicionales.
+
+• DESVENTAJAS:
+
+• ‣ Conflictos de intereses.
+
+• ‣ Descuido de la documentación.
+
+• ¡Se debe procurar una clara distribución de responsabilidades y vías de comunicación bien definidas entre todos los roles!
+
