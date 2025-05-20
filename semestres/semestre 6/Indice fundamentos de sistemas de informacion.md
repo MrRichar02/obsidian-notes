@@ -8,3 +8,5 @@
 
 
 https://padlet.com/gmaestre1/ft56eq0pqrckvps2
+
+https://www.scrum.org/open-assessments/scrum-open
