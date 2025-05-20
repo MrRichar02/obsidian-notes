@@ -607,4 +607,51 @@ El Arq de SW tiene la responsabilidad para tomar las decisiones técnicas. Esto 
 
 - Prácticas y Estándares: Estándares de codificación y libros blancos, selección de herramientas, etc.
 
-- 
+- Experiencia: Conocimiento sobre tecnologías y arquitecturas.
+
+- Diseño, Desarrollo y Pruebas: Diagramas UML, codificación, pruebas unitarias, etc.
+
+- Estar al día en cuanto a tendencias tecnológicas: Agile, Web 2.0, SOA, Java EE, etc.
+
+## Tipos de arquitectos
+
+### Enterprise Architect
+
+Realiza estrategias de IT, estrategias de integración. Su misión es soportar la estrategia de negocios de la organización con soluciones de IT e información.
+
+Competencia: Conocimiento profundo de tanto el negocio como de IT, liderazgo y capacidades de negociación. Experiencia en gobernanza, manejo de proyectos y economía. No interactúa con el Código. Se enfoca en componentes del negocio.
+
+### Business Architect
+
+Posee un conocimiento profundo del negocio, modela procesos de negocio, análisis de requerimientos y tiene capacidad de liderar grupos de trabajo.
+
+Competencia: Conocimiento profundo del negocio, modelado de procesos de negocio, capacidad de liderazgo y análisis de requerimientos.
+
+### Solution Architect
+
+Trabaja con el diseño de soluciones de IT basadas en los requerimientos del negocio, haciendo uso de capacidades de IT existentes dentro de la organización.
+
+Competencia: conocimiento técnico amplio y conocimiento en infraestructura, modelo de datos, orientación al servicio y buena comprensión de la arquitectura empresarial. Crea conexiones entre múltiples sistemas
+
+### Software Architect
+
+Trabaja con la estructura y el diseño de sistemas de software. Frameworks, patterns, modelos de clase, etc. Trabaja con requerimientos funcionales y no funcionales como las QoS quality of service: flexibilidad, performance, usabilidad, etc.
+
+Competencia: conocimiento profundo en programación frameworks, estándares y modelado técnico
+
+## Otros tipos de arquitectos
+
+### Arquitecto de aplicación
+
+Se enfoca en una o más aplicaciones especificas 
+Ejemplos:
+Arquitecto del sistema contable
+Arquitecto de la aplicación XYZ
+
+### Arquitecto por lenguaje
+
+Muy común en empresas de desarrollo a la medida
+Ejemplos:
+Arquitecto .NET
+Arquitecto JAVA
+Arquitecto NodeJS
