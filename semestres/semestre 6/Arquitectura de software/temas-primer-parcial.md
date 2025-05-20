@@ -585,3 +585,26 @@ Se ve influenciado por el líder de mercadeo, el gerente del proyecto, el usuari
 - Protocolos de comunicación
 - Lenguaje de programación
 
+## Responsabilidades del arquitecto de software
+
+El Arq de SW tiene la responsabilidad para tomar las decisiones técnicas. Esto incluye identificar y documentar aspectos importantes del sistema incluyendo requerimientos, diseño , Implementación y despliegue de las vistas del sistema.
+
+- Arquitectura: Definición de arquitectura de los sistemas, vista física, vista lógica, principios de arquitectura, seguridad, etc.
+
+- Selección de Infraestructura: Sistemas Operativos, hardware, redes, sistemas de recuperación, etc. 
+
+- Selección de Software: Pilas de aplicaciones, bases de datos, librerías, frameworks, estándares tecnológicos, etc.
+
+- Metodología de Proyectos: Estructura de Proyectos, Metodologías (Waterfall, Scrum, RUP, XP...).
+
+- Coaching y Mentoring: Ayuda sobre problemas técnicos, ayuda en la evolución profesional, etc.
+
+- Liderazgo: Liderazgo Técnico, responsabilidad y autoridad, dirección de equipos, etc.
+
+- Requisitos no Funcionales: Rendimiento, escalabilidad, seguridad, etc.
+
+- Procesos de Desarrollo: Control de versiones de código fuente, procesos de construcción, integración continua, automatización de pruebas y otros procesos y herramientas de desarrollo.
+
+- Prácticas y Estándares: Estándares de codificación y libros blancos, selección de herramientas, etc.
+
+- 
