@@ -1,5 +1,4 @@
-# Primera presentación
-## Patrones
+# Primera presentación ## Patrones
 
 - Patrones de diseño(GoF - GRASP)
 - Patrones arquitectónicos(POSA)
