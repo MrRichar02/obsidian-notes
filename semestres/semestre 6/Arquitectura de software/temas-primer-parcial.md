@@ -719,3 +719,44 @@ muestran la composición física de los artefactos en el mundo real.
 
 ### Diagramas de componentes
 
+- Un componente representa una parte modular de un sistema que encapsula su contenido y cuya manifestación es reemplazable en su entorno.
+
+- Los componentes son agregaciones de alto nivel de piezas más pequeñas de software, y proporcionan un bloque de construcción de caja negra a la construcción de software.
+
+- Los componentes son considerados unidades autónomas y encapsuladas en un sistema o subsistema que proporcionan varias interfaces.
+
+- Utilización de los diagramas de componentes
+
+- Los diagramas de componentes pueden ser utilizados para modelar sistemas de software de cualquier tamaño y complejidad.
+
+- La herramienta nos permite especificar un componente como unidad modular con interfaces bien definidos.
+
+## Tipos de componentes
+
+a.- Componentes de distribución
+Son los componentes que conforman un sistema, como los programas ejecutables, los DLL, controles ActiveX, Java Beans, etc.
+
+b.- Componentes de trabajo
+Son los componentes con los que se crean los componentes de distribución, como los programas fuente, las bases de datos, etc.
+
+c.- Componentes de ejecución
+Son los componentes que, en el transcurso de la ejecución de un sistema, se crean en forma dinámica, como los índices que crean los motores de búsqueda, como resultado de alguna consulta.
+
+## Clases de interfaces en los diagramas de componentes
+
+- Un componente proporciona y requiere interfaces, que forman la base para cablear los componentes juntos, usando sus dependencias, o por medio de sus conectores.
+
+- Una interfaz proporcionada es aquella que es implementada directamente por el componente.
+
+- Una interfaz requerida es aquella diseñada por una dependencia del componente.
+
+## Diagrama de Componentes
+
+• Los componentes se diseñan de tal forma que puedan ser tratados tan independientemente como sea posible,
+
+• Esos componentes y los subsistemas que ellos conforman, podrán ser reutilizados y sustituidos en forma flexible, conectándolos a través de sus interfaces.
+
+• Así mismo, una vez instalados, esos componentes pueden ser reimplementados independientemente, cuando sea necesario actualizar las funciones de un sistema en producción.
+
+• Notación: un componente se representa mediante un rectángulo con la palabra <<component>>. Opcionalmente, en la esquina superior derecha hay un icono de componente:
+
