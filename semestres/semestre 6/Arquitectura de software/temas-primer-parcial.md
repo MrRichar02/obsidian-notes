@@ -808,4 +808,34 @@ Una línea entre los nodos
 
 - Un dispositivo es un nodo del cual representa un recurso físico de computo en el cual un artefacto puede ser desplegado para su ejecución
 
-- UML da estereotipos no estándares para os d
+- UML da estereotipos no estándares para los devices.
+	- \<<application server\>>
+	- \<<client workstation\>>
+	- \<<mobile device\>>
+	- \<<embedded device\>>
+
+
+### Deployment
+
+- Un despliegue es una relación de dependencia en el cual describe una ubicación de un artefacto
+
+- El componente de despliegue puede ser asociado a uno o múltiples artefactos, opcionalmente parametrizado por una especificación de despliegue
+
+### Artifacts
+
+- Es un clasificador que representa una entidad fisica
+
+- Es un pieza de información que es usada o es producida por el proceso de despliegue del sw o por el despliegue y operación del sistema
+
+- El artefacto es una fuente de despliegue al nodo
+
+- Los artefactos pueden tener propiedades que representan caracteristicas y operaciones que puede hacerse con sus instancias.
+- El Profile estándar UML define estos estereotipos que aplican a los artefactos: Ejemplos:
+- «source» fichero Fuente que puede compilarse en un ejecutable
+- «library» fichero de librería
+- «executable» Un fichero que puede ser ejecutado por un sistema SW
+- «script» Fichero de script que puede ser interpretado por un sistema SW.
+- \<<web archive\>> para WARs
+
+### Jerarquia de nodos
+
