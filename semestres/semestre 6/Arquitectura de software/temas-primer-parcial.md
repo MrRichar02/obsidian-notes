@@ -839,3 +839,20 @@ Una línea entre los nodos
 
 ### Jerarquia de nodos
 
+La jerarquía de los nodos pueden ser modelados utilizando composición o por la definición de una estructura interna.
+
+### Execution enviroment
+
+- Es usualmente parte de un nodo general o un \<<device\>> que representa un JW físico en el cual este entorno de ejecución reside 
+
+- Los ambientes de ejecución pueden ser anidados (Por ejemplo un ambiente de ejecución de una BD puede ser anidado a un ambiente de ejecución de un S.O)
+
+### Manifests
+
+- Manifestación es una relación de abstracción el cual representa una renderización física completa (implementación) de uno o mas elementos del modelo por artefactos o utilización de elementos del modelo en la construcción o generación de artefactos
+
+- Un artefacto manifiesta uno o mas elementos del modelo
+
+- Desde la versión UML 2.0 los artefactos pueden manifestar cualquier elemento empaquetado, no solo componentes como en las versiones previas de UML
+
+- Una manifestación denotada como una abstracción por ejemplo la línea punteada se dirige desde el artefacto a el elemento empaquetado (un paquete o un componente) y se nombra con la palabra \<<manifest\>> 
