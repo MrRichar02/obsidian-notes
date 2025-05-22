@@ -803,3 +803,9 @@ Una línea entre los nodos
 - La posible falla en la modelación de un hardware
 
 - Tales sistemas contienen a menudo varias versiones de componentes software, alguno de los cuales pueden incluso migrar de un nodo a otro. El diseño de tales sistemas requiere tomar decisiones que permitan un cambio continuo de la topología del sistema 
+
+### \<<Device\>> 
+
+- Un dispositivo es un nodo del cual representa un recurso físico de computo en el cual un artefacto puede ser desplegado para su ejecución
+
+- UML da estereotipos no estándares para os d
