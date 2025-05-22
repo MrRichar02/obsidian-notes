@@ -758,5 +758,10 @@ Son los componentes que, en el transcurso de la ejecución de un sistema, se cre
 
 • Así mismo, una vez instalados, esos componentes pueden ser reimplementados independientemente, cuando sea necesario actualizar las funciones de un sistema en producción.
 
-• Notación: un componente se representa mediante un rectángulo con la palabra <<component>>. Opcionalmente, en la esquina superior derecha hay un icono de componente:
+• Notación: un componente se representa mediante un rectángulo con la palabra <\<component>>. Opcionalmente, en la esquina superior derecha hay un icono de componente:
 
+# Quinta presentación
+
+## UML deployment diagrams
+
+- Modelan el hardware usado en la implementación d
