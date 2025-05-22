@@ -856,3 +856,13 @@ La jerarquía de los nodos pueden ser modelados utilizando composición o por la
 - Desde la versión UML 2.0 los artefactos pueden manifestar cualquier elemento empaquetado, no solo componentes como en las versiones previas de UML
 
 - Una manifestación denotada como una abstracción por ejemplo la línea punteada se dirige desde el artefacto a el elemento empaquetado (un paquete o un componente) y se nombra con la palabra \<<manifest\>> 
+
+### Modelo de referencia técnico
+
+- El Modelo de Referencia Técnica (TRM) proporciona una referencia de servicios de plataforma genéricos y elementos de tecnología y actúa como un soporte sobre el que se pueden construir arquitecturas tecnológicas.
+
+- El TRM ofrece un conjunto de bloques de construcción de arquitectura y soluciones que, en última instancia, proporcionará la plataforma para las aplicaciones de negocios e infraestructura.
+
+- El Modelo de Referencia Técnica garantiza que las arquitecturas se creen de forma coherente y repetida sobre la base de un conjunto estándar de elementos.
+
+- El modelo debe crearse como parte de la configuración de los programas de arquitectura, pero normalmente requerirá una ampliación a medida que se introduzcan y retiren los estándares tecnológicos.
