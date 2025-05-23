@@ -1206,3 +1206,13 @@ Las soluciones tradicionales desde el punto de vista de POO son diversas, ejempl
 ### Problema
 
 La responsabilidad del cuerpo y de la cabeza sigue siendo confusa, además, hay que intentar respetar el principio SRP "Single Responsability" que señala: "Un objeto una responsabilidad"
+
+## Reglas estructurales para la arquitectura
+
+- La arquitectura debería tener bien definidos los módulos.
+
+- Cada módulo debería tener bien definido las interfaces que encapsula. Estas interfaces permitirán desarrollar de manera independiente cada módulo.
+
+- La arquitectura nunca debe de depender de una versión de un producto o herramienta comercial.
+
+- Los módulos que producen datos deberán estar separados de los módulos que consumen datos. Esto permitirá que cuando un dato sea añadido solo tenga que modificarse un módulo.
