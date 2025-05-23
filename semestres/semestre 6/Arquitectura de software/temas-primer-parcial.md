@@ -1668,5 +1668,60 @@ Layers ayuda a estructurar las aplicaciones que se pueden descomponer en grupos 
 
 Broker puede ser usado para estructurar sistemas de software distribuidos con componentes desacoplados que interactúan por invocaciones de servicios remotos. Un componente corredor es responsable de coordinar la comunicación, tales como solicitudes de expedición, así como para la transmisión de resultados y excepciones
 
-### Tecnologías
+### Tecnologías y modelos
+
+#### Tecnologías
+
+Cómo se realiza la programación
+
+- Paso de mensajes
+	- Berkeley sockets
+	- Java sockets
+- Llamadas a procedimientos remotos
+	- Sun RPC
+- Objetos distribuidos
+	- Java RMI
+	- General inter-ORB protocol (GIOP)
+	- RMI - IIOP
+	- SSL interORB Protocol (SLLIOP)
+	- HyperText InterORB Protocol (HTIOP)
+	- CORBA
+	- Protocol Buffers / Proto3 / gRCP (Google)
+	- Apache Thrift (Facebook)
+	- Microsoft Bond Protocols
+	- RDA -> Remote Data Access
+	- ODATA (Open Data Protocol - Microsoft OASIS)
+	- PartiQL (Amazon)
+	- COM / COM+ / DCOM
+	- .NET Remoting
+	- tRPC (2021)
+- WebSockets
+- Servicios Web
+	- SOAP
+	- RESTFul
+	- GraphQL(Facebook)
+- Microservicios:
+	- API Gateway
+	- AQM
+
+### Modelos
+
+Cómo se diseña el servicio
+
+- Modelo Cliente/Servidor
+- Modelos con intermediario
+	- Modelo proxy/cache
+	- Modelo multinivel
+- Peer-to-peer
+
+## Patrones POSA. PAC (Presentation-Abstraction-Control)
+
+PAC define una estructura para los sistemas interactivos en forma de una jerarquia de agentes cooperantes. Cada agentes es responsable de un aspecto especifico de la funcionalidad de las aplicaciones y consta de presentación, abstracción y control. Esta subdivisión separa los aspectos de la interacción humano-computadora del agente de su núcleo funcional y su comunicación con otros agentes. Buschmann, et al. 1996
+
+## Patrones POSA. MicroKernel
+
+MicroKernel se aplica a los sistemas de software que debe ser capaz de adaptarse a los cambio en los requisistos del sistema. Separa un núcleo funcional mínimo de la funcionalidad extendida y partes especificas del cliente. El miconúcleo también sirve como un socket para conectar estas extensiones y coordinar su colaboración. Buschmann, et al. 1996
+
+## Patrones C/S
+## Patrones N-Capas
 
