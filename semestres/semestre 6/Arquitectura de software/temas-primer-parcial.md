@@ -1491,3 +1491,87 @@ Buschmann, 1996
 tecnología concreta
 • Ej.: ¿Cómo comparar objetos correctamente en Java?
 • Correcta redefinición de equals() y hashCode()
+
+## Architectural styles
+
+•Refer to the overall design and organization of a software system, and the principles and patterns that are used to guide the design.
+
+•These styles provide a general framework for the design of a system, and can be used to ensure that the system is well-structured, maintainable, and scalable.
+
+### Microservices
+
+where the system is built as a collection of small, independent, and loosely-coupled services
+
+### Event-Driven
+
+where the system reacts to specific events that occur. Async Communication
+
+### Layered
+
+where the system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces.
+
+### Service-Oriented
+
+where the system is built as a collection of services that can be accessed over a network
+
+### Data-Centric
+
+where the system is focused on the storage, retrieval and manipulation of data, rather than the processing of data.
+
+### Component-Based
+
+where the system is composed of reusable and independent software components
+
+### Domain-Driven
+
+where the system is organized around the core business domain and business entities.
+
+## Estilos Arquitectónicos vs Patrones de diseño
+
+• Muchos estilos arquitectónicos son muy conocidos desde hacer tiempo por la comunidad de Ing. De Software.
+
+• Ampliamente usados en aplicaciones compleja o de misión critica.
+
+
+| Estilo Arquitectónico                   | Patrón de diseño                                        |
+| --------------------------------------- | ------------------------------------------------------- |
+| Pocos                                   | Muchos                                                  |
+| Organización de sistemas de gran escala | Soluciones de diseño de escala pequeña. Son localizados |
+
+## Architectural patterns
+
+• Architectural patterns are a set of solutions that have proven their reliability in specific types of software systems.
+
+• They provide a common vocabulary and set of best practices for designing and building software systems, and can help developers make better design decisions.
+
+## POSA (Pattern-Oriented Software Architecture)
+
+### Dataflow Based
+
+- piplines and filters
+- Batch
+
+### Data-centric Systems (repositories)
+
+- Blackboard
+- Databases
+
+### Invocación Implicita (eventos)
+
+### Layered
+
+- Client / Service
+- Layers
+- 3 or N layers
+
+### Object Oriented (components)
+
+### Microkernel
+
+### MVC Pattern (MVP, MVVM, etc)
+
+### Message Queues and Streams
+
+### Distributed Systems (Brokers)
+
+- Corba, DCOM, COM+, RPC,
