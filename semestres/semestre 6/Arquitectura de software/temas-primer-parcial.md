@@ -1346,4 +1346,24 @@ C.I is a good practice, in which each code check-in is verified through automati
 
 - Una vista arquitectónica de una sistema o plataforma de negocio que presenta primordialmente : Estructura, modularidad, componentes esenciales y flujos de control principales de un dominio ó perspectiva específica del problema de negocio que soporta la arquitectura.
 
-- 
+- Es una ventana al interior del sistema desde una perspectiva especifica enfatizando una idea en particular
+
+## Productos resultantes de la arquitectura de software
+
+El objetivo principal de la Arquitectura del Software es aportar elementos que ayuden a la toma de decisiones y, al mismo tiempo, proporcionar conceptos y un lenguaje común que permitan la comunicación entre los equipos que participen en un proyecto. Para conseguirlo, la Arquitectura del Software construye abstracciones, materializándolas en forma de vistas.
+
+✓ Vista lógica: describe el modelo de objetos.
+
+✓ Vista de proceso: muestra la concurrencia y sincronía de los procesos.
+
+✓ Vista física: muestra la ubicación del software en el hardware.
+
+✓ Vista de implementación: describe la organización del entorno de desarrollo.
+
+Existe una quinta vista que consiste en una selección de casos de uso o de escenarios que los arquitectos pueden elaborar a partir de las cuatro vistas anteriores.
+
+# Séptima presentación
+
+## Patrón de diseño
+
+Un patrón es una solución 
