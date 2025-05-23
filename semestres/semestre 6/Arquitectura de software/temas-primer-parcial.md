@@ -1366,4 +1366,128 @@ Existe una quinta vista que consiste en una selección de casos de uso o de esce
 
 ## Patrón de diseño
 
-Un patrón es una solución 
+Un patrón es una solución probada que se puede aplicar con éxito a un determinado tipo de problemas que aparece ocn frecuencia en un contexto especifico.
+
+Esqueleto de la aplicación básica que el diseñador ha de adaptar a sus necesidades
+
+Un patrón en software es una colección de objetos que incluye:
+- Relaciones entre estos objetos
+- Desarrollados para resolver un problema concreto
+- Se ha comprobado que funcionan bien (han sido testeados)
+
+Los patrones de software permiten establecer un lenguaje común para expresar y comunicar experiencias, diseños y buenas prácticas
+
+## Qué es un patrón de software?
+
+Un patrón describe un problema de diseño recurrente, que surge en contextos específicos de diseño, y presenta un esquema genérico probado para la solución de este. El esquema de la solución describe un conjunto de componentes, responsabilidades y relaciones entre de éstos, y formas en que dichos componentes colaboran entre si.
+
+## Catalogo de patrones
+
+### POSA
+
+#### Nombre 
+
+Pattern Oriented Software Architecture
+
+#### USO
+
+Definición de la arquitectura
+
+#### Referencia
+
+Buschmarnn, 1996
+
+### PEEA
+
+#### Nombre 
+
+Pattern of Enterprise Application Architecture
+
+#### USO
+
+Definición de la arquitectura
+
+#### Referencia
+
+Fowler, 2003
+
+### GRASP
+
+#### Nombre 
+
+General Responsibility Assignment Software Patterns
+
+#### USO
+
+Paso del análisis al diseño
+
+#### Referencia
+
+Larman, 2004
+
+### GoF
+
+#### Nombre 
+
+Design Patterns (Gang of Four)
+
+#### USO
+
+Diseño
+
+#### Referencia
+
+Gamma, 1995
+
+### J2EE
+
+#### Nombre 
+
+J2EE Patterns 2° Edition
+
+#### USO
+
+Diseño
+
+#### Referencia
+
+Alur, 2003
+
+### Idioms
+
+#### Nombre 
+
+Patrones de código
+
+#### USO
+
+Codificación
+
+#### Referencia
+
+Buschmann, 1996
+
+## Pattern-Oriented Software Architecture: A system of Patterns
+
+• También conocido como The POSA Book
+•  Fue el primer libro en hacer una clasificación de patrones
+•  Patrones arquitectónicos Diseño
+•  Patrones de diseño Diseño
+•  Idioms Implementación
+
+### Patrones arquitectónicos
+
+•  Aconsejan la arquitectura global que debe seguir una aplicación
+•  Ej.: El patrón Model-View-Controller (MVC) aconseja la arquitectura global que debe tener una aplicación interactiva
+
+### Patrones de diseño
+
+• Explican cómo resolver un problema concreto de diseño
+• El patrón “Data Access Object” (DAO) permite abstraer y encapsular los accesos a un repositorio de datos (ej.: BD relacional, BD orientada a objetos, ficheros planos, etc.)
+
+### Idiomas
+
+• Explican cómo resolver un problema particular de implementación con una
+tecnología concreta
+• Ej.: ¿Cómo comparar objetos correctamente en Java?
+• Correcta redefinición de equals() y hashCode()
