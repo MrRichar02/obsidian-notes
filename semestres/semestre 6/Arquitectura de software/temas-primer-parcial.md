@@ -916,4 +916,48 @@ La jerarquía de los nodos pueden ser modelados utilizando composición o por la
 
 ### Áreas de enfoque
 
-- Selección de tecnologías 
+- Arquitectura: Selección de tecnologías, requirimientos no funcionales (QoS), manejo de riesgos
+- Diseño: Requerimientos funcionales
+
+Architecture is concerned with the selection of architectural elements, their interactions, and the constraints on those elements and their interactions necessary to provide a framework in which to satisfy the requirements and serve as a basis for the design
+
+Design is concerned with the modularization and detailed interfaces of the design elements, theis algorithms and procedures, and the data types needed to support the architecture and to satisfy the requirements
+(Perry & Wolf g2)
+
+La arquitectura envuelve un conjunto de decisiones estratégicas de diseño, lineamientos, reglas y patrones que restringen el diseño y la implementación de un software.
+
+## Niveles de diseño
+
+- Diseño Arquitectónico: Diseño de las estructuras que permiten a los drivers ser satisfechos
+
+- Diseño de interacción de elementos: Identificar elementos adicionales y sus interfaces
+
+- Diseño de elementos internos: Implementación de interfaces
+
+
+# Estructura del documento de definición de arquitectura
+
+### 1. Introducción
+• Propósito: Explicar el objetivo del documento y su audiencia.
+
+• Alcance: Describir qué partes del sistema cubre el documento.
+
+• Definiciones, Acrónimos y Abreviaturas: Proporcionar definiciones de términos importantes utilizados en el documento.
+
+• Referencias: Listar documentos, estándares, o referencias externas relevantes para la arquitectura.
+
+• Resumen del Documento: Breve descripción de la organización del documento.
+
+### 2. Visión General de la Arquitectura
+
+• Descripción General: Proporcionar un resumen de la arquitectura del sistema, incluyendo los principales objetivos de diseño.
+
+• Metas y Restricciones: Describir los objetivos principales de la arquitectura, así como las restricciones impuestas (técnicas, de negocio, legales, etc.).
+
+• Contexto del Sistema: Describir cómo el sistema se sitúa dentro de un entorno mayor (contexto empresarial, interacción con otros sistemas, etc.).
+
+### 3. Vista de Casos de Uso
+
+• Diagrama de Casos de Uso: Mostrar los principales casos de uso del sistema.
+
+• Descripción de Casos de Uso: Proporcionar descripciones de alto nivel de los principales casos de uso y sus actores.
