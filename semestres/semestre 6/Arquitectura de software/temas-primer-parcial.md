@@ -1110,3 +1110,99 @@ Name, Construct, structure, style, readability
 • Facilita el mantenimiento y probablemente disminuya la deuda técnica.
 • Podrás centrarte en resolver otros problemas.
 • Produce código de mayor calidad.
+
+#### ¿Cómo aplicar KISS?
+
+• Divide el problema en muchos pequeños problemas. Cada problema debe poder resolverse en una o muy pocas clases.
+
+• Mantener los métodos pequeños, donde cada método nunca debe tener más de 30-40 líneas.
+
+• Cada método sólo debería resolver un pequeño problema, no muchos casos de uso.
+
+• Si tiene muchas condiciones en su método, dividirlas en métodos más pequeños.
+
+## Principio DRY
+
+• Don’t Repeat Yourself, en español “No te repitas” llama a aplicar la práctica de no repetir el mismo código en el sistema.
+
+• Básicamente una pieza de código en el sistema tiene que ser única, no ambigua, tener un objetivo único y no puede repetirse.
+
+#### Ventajas
+
+• Mejora la mantenibilidad:
+• Permite crear un código más legible y fácil de entender para todo el equipo.
+• Otra ventaja importante es la reusabilidad, esta es inherente a la aplicación de esta práctica, al fusionar varios bloques de código en una solo, con un objetivo definido, podremos reusarlo en el ámbito de la aplicación cada vez que lo necesitemos.
+• Mejora el testeo del software (unitario, integración) al no tener duplicados.
+• Mayor velocidad en el desarrollo como consecuencia de la reusabilidad.
+
+## Principio YAGNI
+
+• “You Aren’t Gonna Need It”, refiere a no codificar aquello que no vamos a necesitar
+
+• Los programadores en ocasiones agregamos en las aplicaciones lógica “por si acaso”, pensando que en el futuro la vamos a necesitar, ignorando que estamos agregando complejidad adicional con algo que no aporta valor directo a la solución. Desventajas de aplicar este principio
+
+• Incremento del tiempo de desarrollo.
+
+• Mayor complejidad para testear o alcanzar un mayor coverage en las pruebas.
+
+• Dificulta la legibilidad.
+
+• Puede incrementar los costes generales sin generar ningún beneficio a cambio.
+
+## Principios de diseño S.O.L.I.D
+
+### Single responsibility Principle
+
+• Cada clase tiene una única responsabilidad y propósito
+
+### Open Closed Principle
+
+•Una clase puede ser abierta para extenderse pero cerrada para modificarla.
+
+• Por ejemplo podría adicionar mas funcionalidad pero no modificar las funciones actuales.
+
+### Liskov substitution principle
+
+•Usar la herencia de una manera que no rompa la lógica de la aplicación en ningún momento.
+
+• Por lo tanto, si una clase hija llamada "XyClass" hereda de una clase padre "AbClass", la clase hija no deberá replicar la funcionalidad de la clase padre de una manera que cambie la clase padre su comportamiento. De este modo, puede utilizar fácilmente el objeto de XyClass en lugar del objeto de AbClass sin romper la lógica de la aplicación.
+
+### Interface Segregation Principle
+
+•Una clase puede implementar múltiples interfaces.
+
+### Dependency Inversion Principle
+
+• Como desacoplar su código.
+
+• Si por ejemplo una Clase compra depende de la clase Usuario, entonces la instanciación del objeto usuario debería venir de afuera de la clase Compra.
+
+## LSP
+
+• LSP indica que los objetos de su subclase deben comportarse de la misma manera que los objetos de su superclase.
+
+• En el ejemplo Car y Bicycle se extienden de la clase Vehicle. Esto hace fallar el principio LSP por el objeto Bicycle no puede reemplazar a Vehicle con el metodo starEngine()
+
+## Principio de segregación de interfaces
+
+• Esto implica que debes mantener tus interfaces tan pequeñas como sea posible. No llene sus interfaces con métodos que no son necesarios.
+
+• En este caso, nuestra interfaz está contaminada con métodos como nadar y volar que no se aplican a la clase Dog.
+
+• Podemos arreglar esto dividiendo nuestra interfaz en múltiples interfaces como AnimalsWhoSwim y AnimalsWhoFly. La interfaz Animals puede contener la función eat()
+
+## Principio de inversión de dependencias 
+
+Imaginemos que estamos haciendo un videojuego en cual tenemos un personaje que es un robot, este robot puede realizar acciones de diferentes maneras, por lo cual su cabeza puede ser conectada a infinidad de cuerpos distintos.
+
+Las soluciones tradicionales desde el punto de vista de POO son diversas, ejemplo:
+
+❑ Una clase base Robot con un atributo cuerpo, crear varias clases asignando un atributo Cuerpo diferente en el constructor
+
+❑ Una clase Robot con un atributo enumeración que le permita cambiar de cuerpo
+
+❑ Muchas clases cuerpo que heredan de una clase Robot
+
+### Problema
+
+La responsabilidad del cuerpo y de la cabeza sigue siendo confusa, además, hay que intentar respetar el principio SRP "Single Responsability" que señala: "Un objeto una responsabilidad"
