@@ -451,7 +451,7 @@ Ravioli-oriented architecture (aka microservices)
 - Assembly
 - Compiled Languages: Procedural, OO, Functional
 - Distributed: Client-server, nTier, RPC, ESB, messaging
-- Runtimes: Java - .NET, Dynacmic Languages, Application server, Virtualisation-containers
+- Runtimes: Java - .NET, Dynacmic Languages, Application server, Virtualisation-ncontainers
 - Internet: SoAP-SOA, Javascript AJAX, Rest, Microservices, reactive
 - NoSQL: Document, GRAPH, HADOOP
 - CLOUD: IAAS, SAAS, PAAS, Serverless
