@@ -1216,3 +1216,61 @@ La responsabilidad del cuerpo y de la cabeza sigue siendo confusa, además, hay 
 - La arquitectura nunca debe de depender de una versión de un producto o herramienta comercial.
 
 - Los módulos que producen datos deberán estar separados de los módulos que consumen datos. Esto permitirá que cuando un dato sea añadido solo tenga que modificarse un módulo.
+
+- Cada tarea o proceso deberá ser bien documentado, para que este pueda ser fácilmente modificado, quizás incluso en tiempo de ejecución.
+
+- La arquitectura deberá caracterizarse como un conjunto de simples interacciones, esto es para incrementar la confiabilidad, la manteneabilidad, reducir el tiempo de desarrollo, etc.
+
+## Aspectos importantes de la arquitectura
+
+✓ Seleccione la vista arquitectonica. Use por ejemplo 4+1 vistas o Modelo C4 (Contexto, Contenedores, Componentes y Código) - https://c4model.com/.
+
+✓ Seleccione el Estilo Arquitectonico (Monolitico, SOA- Microservicios, arquitectura en capas (Layer), etc)
+
+✓ Seleccione entre una solución Cloud o servidores on-premise
+
+✓ Considere Autenticación / Autorización y Privacidad.
+
+✓ Defina reglas de seguridad y protocolos de comunicación
+
+✓ Defina si se necesita balanceo de carga (Nginx), messaging (Apache Kafka, RabbitMQ, JMS, ActiveMQ), etc
+
+✓ Hacer una revisión general de cualquier algoritmo crítico que controle el servicio.
+
+✓ Considere cuellos de botella y determine soluciones
+
+✓ Seleccione Tipos de almacenamiento (SQL o NoSQL , NewSQL, In-Memory)
+
+✓ Comprender qué datos deben almacenarse en caché y cómo mejorar el rendimiento, la seguridad y la disponibilidad con el almacenamiento en caché (Elasticsearch / Apache Solr).
+
+✓ Seleccione un Sistema de monitoreo (Graphite /Prometheus / Grafana) y logging (Kibana /Datadog /Logstash / Fluentd). Como Gestionar Excepciones y fallos (Netflix Turbine / Hystrix, Resilence4J).
+
+✓ Defina la separación entre areas públicas y restringidas
+
+## Architecture Design
+
+### API Design Choices
+
+- REST
+- RPC
+- GraphQL
+
+### Forma de responder
+
+- Synchronous
+- Async Messaging
+- Publish Subscribe
+
+### Scalability
+
+### Replication
+
+### Partitioning
+
+### Sharding
+
+### Load Balancing
+
+### Caching
+
+## Vertical / Horizontal Partitioning
