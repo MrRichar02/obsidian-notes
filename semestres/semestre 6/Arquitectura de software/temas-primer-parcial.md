@@ -1274,3 +1274,76 @@ La responsabilidad del cuerpo y de la cabeza sigue siendo confusa, además, hay 
 ### Caching
 
 ## Vertical / Horizontal Partitioning
+
+## Content Delivery Network (CDN)
+
+A CDN is a network of geographically dispersed servers used to deliver static content. CDN servers cache static content like images, videos, CSS, JavaScript files, etc.
+
+Dynamic content caching enables the caching of HTML pages that are based on request path, query strings, cookies, and request headers.
+
+## geoDNS
+
+In normal operation, users are geoDNS-routed, also known as geo-routed, to the closest data center, with a split traffic of x% in US-East and (100 – x)% in US-West. geoDNS is a DNS service that allows domain names to be resolved to IP addresses based on the location of a user
+
+## Logging: 
+Monitoring error logs is important because it helps to identify errors and problems in the system.
+
+## Metrics:
+Collecting different types of metrics help us to gain business insights and understand the health status of the system. Example
+
+## Host level metrics:
+CPU, Memory, disk I/O, etc.
+
+## Aggregated level metrics:
+for example, the performance of the entire database tier, cache tier, etc.
+
+## Key business metrics:
+daily active users, retention, revenue, etc.
+
+## Automation:
+When a system gets big and complex, we need to build or leverage automation tools to improve productivity.
+
+C.I is a good practice, in which each code check-in is verified through automation, allowing teams to detect problems early. Besides, automating your build, test, deploy process, etc. could improve developer productivity significantly.
+
+## Cohesión y acoplamiento
+
+• La cohesión implica que un componente o clase encapsula solo atributos y operaciones que están altamente relacionados entre ellas y con la clase. Se busca la máxima cohesión en una clase
+
+• Acoplamiento es la medida cualitativa del grado en que una clase está conectada con otra. Se busca el mínimo acoplamiento entre clases
+
+## Característica fundamental de las arquitecturas
+
+- Bajo acoplamiento y alta cohesion
+
+## Pasos para diseño de componentes
+
+1. Identifique todas las clases de diseño que correspondan al dominio del problema
+
+2. Identifique todas las clases de diseño que correspondan al dominio de la infraestructura (GUI, sistemas operativos, administración de datos etc.)
+
+3. Elabore todas las clases que no provienen de clases reusadas
+
+	a) Especifique detalles de los mensajes entre clases que colaboran
+	b) Identifique las interfaces de cada componente
+	c) Elabore atributos y defina tipos de datos y estructuras de datos requeridas para implementarlas
+	d) Describa el flujo de procesamiento de cada componente en detalles
+
+4. Describa fuentes de datos persistentes (bases de datos y archivos) e identifique las clases requeridas para manipularlos
+
+5. Desarrolle y elabore representaciones del comportamiento de una clase o componente (diagramas de estados)
+
+6. Elabore diagramas de despliegue (deployment) para dar detalles adicionales de implementación
+
+7. Revise cada representación de diseño de los componentes y siempre considere alternativas
+
+## Descripción de una arquitectura
+
+✓Representación o “plano” de una configuración real de recursos, reglas, y relaciones actuales o sugeridas.
+
+✓Colección de productos para documentar una arquitectura.
+
+## Vista arquitectónica
+
+- Una vista arquitectónica de una sistema o plataforma de negocio que presenta primordialmente : Estructura, modularidad, componentes esenciales y flujos de control principales de un dominio ó perspectiva específica del problema de negocio que soporta la arquitectura.
+
+- 
