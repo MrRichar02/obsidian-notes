@@ -1964,4 +1964,87 @@ Servicios de publicación de contenidos
 - Netscape Server
 - IIS
 - OmmiHTTPD
-- S
+- Sun Server
+- Sambar Server
+- Xitami
+- iPlanet Server
+
+### Servidores de transacciones 
+
+Garantiza transacciones ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad) en el procesamiento distribuido
+
+- BEA's Tuxedo
+- IBM - CICS
+- Transarc0s Encima
+- MTS
+
+### Servidores de componentes
+
+Contenedores de objetos que prestas servicios a través de una interface definida
+
+- Tomcat
+- Microsoft
+- Servidor de componentes COM
+- NET Remoting
+
+### Servidores de aplicaciones
+
+Servicios de infraestructura y aplicación. Responden a una arquitectura lógica definida, por genreal J2EE
+
+- OAS(IAS)
+- Websphere
+- Jboss
+- BEA-Weblogic
+- Jonas
+- Iplanet
+
+### ¿Cuáles son los servicios de infraestructura?
+
+• Los servicios de infraestructura típicos incluyen:
+• Messaging (Mensajería y Notificaciones).
+• Pooling.
+• Caching.
+• Clustering.
+• Naming.
+• Logging.
+• etc.
+
+### Servicios de un servidor de aplicaciones
+
+Gestión de transacciones.
+Modelo de interoperabilidad para componentes.
+Intercambio de datos.
+Colas de mensajes.
+Servidor HTTP para clientes Web y clientes móviles.
+Almacenamiento temporal de base de datos y web.
+Herramientas de administración.
+
+### Los servidores de App permiten
+
+• Creación de páginas Web dinámicas
+	• (ASP en Microsoft o JSP en Java)
+• Componentes que pueden encapsular la lógica del negocio
+	• (COM en Microsoft o EJB en Java)
+• Soporte de transacciones
+• Acceso a la aplicación desde clientes HTTP
+• Soporte para invocar métodos remotos
+• Manejo de seguridad
+• Uso de SSL y conexión con Bases de Datos
+	• (ODBC en Microsoft o JDBC en Java)
+
+### Servidor de aplicaciones
+
+• Todos los servicios simplifican el desarrollo de SW.
+• Se ubica siempre entre los clientes o usuarios finales y el servidor de BD
+
+### Características servidor de aplicaciones
+
+La mayoría de servidores de aplicaciones te permiten hacer algunas de las siguientes tareas.
+
+• Presentar Contenido Dinámico
+• Administrar un Sitio Web
+• Construir un Sistema de Manejo de Contenidos
+• Seguridad y Manejo Correcto
+• Brindar Servicios de red
+• Integración de diversos sistemas
+• Proveen Escalabilidad
