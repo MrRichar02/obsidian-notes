@@ -1574,4 +1574,99 @@ where the system is organized around the core business domain and business entit
 
 ### Distributed Systems (Brokers)
 
-- Corba, DCOM, COM+, RPC,
+- Corba, DCOM, COM+, RPC, Protocol Buffers, .NET Remoting, Sockets, WebSockets, etc
+
+### Service Oriented (SOA, Microservices, Serverless, WebServices)
+
+## Arquitectura Filtro-Tubería (Pipes & Filters)
+
+• Incorporada como elemento base en Unix (McIlroy)
+
+• Hoy con un significado mucho más amplio
+
+• Es apropiada para sistemas que implementan transformaciones de datos en pasos sucesivos.
+
+### Filtros y Tuberías (Pipes & Filters)
+
+#### Descripción
+
+• Cada componente tiene un conjunto de entradas y un conjunto de salidas.
+• Un componente lee entradas y las transforma en salidas
+
+#### Restricciones:
+
+• Los filtros deben ser independientes.
+• No deben compartir estado con otros filtros.
+
+Ventajas
+
+• Permite entender el sistema global en términos de la combinación de
+componentes
+• Soporta de buena manera la reutilización.
+• Los filtros son independientes de sus vecinos
+• Facilidad de Mantenimiento y mejora
+• Soportan la ejecución concurrente
+• Facil para reemplazar filtros;
+• Interaciones entre componentes faciles de analizar.
+
+Desventajas
+
+- No aconsejable para cuando se necesita interactividad
+-  Problemas de rendimiento ya que los datos se transmiten en forma completa entre filtros
+- El patrón puede resultar demasiado simplista, especialmente para orquestación de servicios que podrían ramificar la ejecución de la lógica de negocios de formas complicadas.
+- No maneja con demasiada eficiencia construcciones condicionales, bucles y otras lógicas de control de flujo. Agregar un paso suplementario afecta la performance de cada ejecución de la tubería.
+- Eventualmente pueden llegar a requerirse buffers de tamaño indefinido,
+- La independencia de los filtros implica que es muy posible la duplicación de funciones de preparación que son efectuadas por otros filtros
+
+## Sistemas basados en repositorios
+
+### Descripción
+
+• Existen dos tipos de componentes
+• Una estructura central de datos (representa el estado del proceso)
+• Componentes independientes (operan en función del depósito de datos)
+• Las interacciones entre el repositorio y los demás componentes es variable:
+	• La entrada de los datos es seleccionada por los componentes
+	• El estado de los datos del repositorio selecciona el proceso a ejecutar la pizarra)
+
+• Ejemplos: Reconocimiento de patrones y de la voz (blackboard); editores de
+sintaxis y compiladores
+
+### Ventajas
+
+- Solo un conector (blackboard) para cualquier usuario.
+
+- Posibilita la integración de agentes.
+
+- Adecuado para la resolución de problemas no deterministas.
+
+- Se puede resumir el estado de conocimiento en cada momento del proceso
+
+### Desventajas 
+
+- Estructura de datos común a todos los agentes
+
+- Si existen muchos agentes puede formarse un cuello de botella.
+
+- Problemas de carga a la hora de chequear y vigilar el estado de la pizarra.
+
+## Patrón POSA. Layers
+
+Layers ayuda a estructurar las aplicaciones que se pueden descomponer en grupos de subtareas en la que cada grupo de subtareas se encuentra en un nivel particular de abstracción. Buschmana, et al 1996
+
+• Las 4 capas más comúnmente encontradas de un sistema de información general son las siguientes.
+
+• Capa de presentación (también conocida como capa UI )
+
+• Capa de aplicación (también conocida como capa de servicio )
+
+• Capa de lógica de negocios
+
+• Capa de acceso a datos (también conocida como capa de persistencia )
+
+## Patrones POSA. Broker
+
+Broker puede ser usado para estructurar sistemas de software distribuidos con componentes desacoplados que interactúan por invocaciones de servicios remotos. Un componente corredor es responsable de coordinar la comunicación, tales como solicitudes de expedición, así como para la transmisión de resultados y excepciones
+
+### Tecnologías
+
