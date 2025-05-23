@@ -1722,6 +1722,32 @@ PAC define una estructura para los sistemas interactivos en forma de una jerarqu
 
 MicroKernel se aplica a los sistemas de software que debe ser capaz de adaptarse a los cambio en los requisistos del sistema. Separa un núcleo funcional mínimo de la funcionalidad extendida y partes especificas del cliente. El miconúcleo también sirve como un socket para conectar estas extensiones y coordinar su colaboración. Buschmann, et al. 1996
 
-## Patrones C/S
-## Patrones N-Capas
+## Evolución C/S
 
+Se fue pasando de
+- Monolítica
+- C/S
+- C/S 3 capas
+- C/S N Capas
+- SOA
+- MS / Serverless
+
+## Evolución de la tecnología
+
+### Arquitecturas monoliticas
+
+➢ Mainframes de gran tamaño: En 1946 ENIAC.
+➢ Superficie de 160 m2
+	➢ Peso 30 toneladas
+	➢ Procesamiento de 30.000 instruciones / seg
+	➢ Sistemas Operativos Propietarios
+➢ Solo Texto
+➢ Terminales Brutas con solo teclado y monitor.
+
+## Evolución de la arquitectura
+
+- Monolitico
+- Estructurado
+- Client / Server
+- 3-Tier, N-Tier
+- Objetos distrib
