@@ -961,3 +961,129 @@ La arquitectura envuelve un conjunto de decisiones estratégicas de diseño, lin
 • Diagrama de Casos de Uso: Mostrar los principales casos de uso del sistema.
 
 • Descripción de Casos de Uso: Proporcionar descripciones de alto nivel de los principales casos de uso y sus actores.
+
+### 4. Vista Lógica
+
+• Diagrama de Componentes: Mostrar la estructura lógica del sistema (módulos, capas, paquetes).
+
+• Descripción de Componentes: Describir los principales componentes y sus responsabilidades.
+
+• Relaciones entre Componentes: Explicar las relaciones y dependencias entre los componentes.
+
+• Patrones Arquitectónicos: Mencionar cualquier patrón arquitectónico utilizado (por ejemplo, MVC, microservicios, etc.).
+
+### 5. Vista de Desarrollo
+
+• Estructura de Paquetes y Módulos: Describir la estructura del código fuente, incluyendo paquetes, módulos y submódulos.
+
+• Convenciones de Desarrollo: Detallar las convenciones de codificación y otros estándares de desarrollo utilizados.
+
+• Entorno de Desarrollo: Describir las herramientas y entornos utilizados en el desarrollo.
+
+### 6. Vista de Procesos
+
+• Diagrama de Procesos: Mostrar cómo los procesos interactúan dentro del sistema.
+
+• Descripción de Procesos: Describir los principales procesos del sistema y cómo interactúan entre sí.
+
+• Gestión de Concurrencia: Explicar cómo se maneja la concurrencia y la sincronización de procesos.
+
+### 7. Vista Física (Despliegue)
+
+• Diagrama de Despliegue: Mostrar cómo se distribuyen los componentes del sistema en la infraestructura física.
+
+• Descripción de Nodos: Describir los nodos físicos y sus responsabilidades.
+
+• Mapeo de Componentes a Nodos: Explicar cómo los componentes lógicos se despliegan en los nodos físicos.
+
+### 8. Vista de Datos
+
+• Modelo de Datos: Proporcionar un modelo conceptual de los datos utilizados por el sistema.
+
+• Gestión de Datos: Describir cómo se manejan los datos en el sistema, incluyendo la persistencia, la caché, la replicación, etc.
+
+• Integridad y Consistencia de Datos: Explicar las políticas de integridad y consistencia de datos.
+
+### 9. Vista de Seguridad
+
+• Requisitos de Seguridad: Detallar los requisitos de seguridad relevantes para la arquitectura.
+
+• Modelo de Seguridad: Describir el modelo de seguridad del sistema, incluyendo autenticación, autorización, cifrado, etc.
+
+• Políticas de Seguridad: Explicar las políticas de seguridad y cómo se implementan.
+
+### 10. Vista de Escenarios
+
+• Escenarios de Calidad: Describir escenarios específicos que prueben los atributos de calidad de la arquitectura (escalabilidad, rendimiento, disponibilidad, etc.).
+
+• Análisis de Riesgos: Identificar riesgos potenciales en la arquitectura y cómo se gestionan.
+
+### 11. Vista de Implementación y Migración
+
+• Plan de Implementación: Describir el plan de implementación del sistema.
+
+• Migración de Datos y Sistemas: Explicar cómo se migrarán los datos y sistemas existentes al nuevo sistema.
+
+• Compatibilidad con Versiones Anteriores: Describir cómo se manejará la compatibilidad con versiones anteriores.
+
+### 12. Aspectos No Funcionales
+
+• Requisitos de Rendimiento: Especificar los requisitos de rendimiento del sistema.
+
+• Requisitos de Disponibilidad y Fiabilidad: Describir los requisitos de disponibilidad y fiabilidad del sistema.
+
+• Requisitos de Mantenibilidad y Extensibilidad: Explicar cómo la arquitectura soporta la mantenibilidad y extensibilidad.
+
+### 13. Conclusión
+
+• Resumen de Decisiones Clave: Resumir las decisiones arquitectónicas clave y sus justificaciones.
+
+• Lecciones Aprendidas: Describir cualquier lección aprendida durante el proceso de diseño arquitectónico.
+
+### 14. Apéndices
+
+• Glosario: Definir términos técnicos y acrónimos utilizados en el documento.
+
+• Diagramas Adicionales: Incluir diagramas adicionales que puedan ayudar a comprender la arquitectura.
+
+• Referencias: Listar cualquier referencia adicional no cubierta en la introducción.
+
+### 15. Índice de Figuras y Tablas
+
+• Proporcionar un índice para todas las figuras y tablas incluidas en el documento.
+
+### 16. Historial de Revisión
+
+• Mantener un registro de todas las revisiones del documento, con detalles de los cambios realizados y quién los realizó.
+
+## Esquema RUP
+
+Fases, disciplinas, iteraciones, roles, actividades y artefactos
+
+## Diseño de software y stack arquitectónico
+
+### Enterprise patterns
+
+DTO's, Domain-Models, Transacition Scripts, Repositories, Mappers, Value Objects
+
+### Architectural Patterns
+
+Model-View-Controller, Domain-Driven Design
+
+### Architectural Styles
+
+Layered, Client-Server, Monolithc, Component-based
+
+### Architectural Principles
+
+Policy vs. details, coupling & cohesion, dependencies, boundaries
+
+### Design Patterns 
+
+Observer, Strategy, Factory, etc
+
+### Design Principles 
+
+Composition Over Inheritance, Hollywood Principle, encapsulate what varies, SOLID, DRY, YAGNI
+
+### Object-
