@@ -1086,4 +1086,27 @@ Observer, Strategy, Factory, etc
 
 Composition Over Inheritance, Hollywood Principle, encapsulate what varies, SOLID, DRY, YAGNI
 
-### Object-
+### Object-Oriented Programming
+
+Inheritance, Polymorphism, Encapsulation, Abstraction
+
+### Programming Paradigms
+
+Structured, object-Oriented, Functional
+
+### Clean Code
+
+Name, Construct, structure, style, readability
+
+## Principio KISS
+
+• «Keep It Simple, Stupid», en español “Mantenlo simple y estúpido”, y nos quiere decir que las cosas sencillas funcionan mejor, a nivel de código, que lo mantengamos simple.
+
+• Nuestra solución tanto en diseño como en implementación debe ser sencilla.
+
+#### Ventajas:
+
+• Mejora la legibilidad y comprensión del sistema.
+• Facilita el mantenimiento y probablemente disminuya la deuda técnica.
+• Podrás centrarte en resolver otros problemas.
+• Produce código de mayor calidad.
