@@ -866,3 +866,16 @@ La jerarquía de los nodos pueden ser modelados utilizando composición o por la
 - El Modelo de Referencia Técnica garantiza que las arquitecturas se creen de forma coherente y repetida sobre la base de un conjunto estándar de elementos.
 
 - El modelo debe crearse como parte de la configuración de los programas de arquitectura, pero normalmente requerirá una ampliación a medida que se introduzcan y retiren los estándares tecnológicos.
+
+# Sexta presentación
+
+
+## Arquitectura vs Complejidad
+
+➢En la medida que la complejidad de los sistemas crece, los algoritmos y las estructuras de datos dejan de convertirse en el mayor problema.
+
+➢El diseño y especificación de la estructura general del sistema emerge como un nuevo tipo de problema: el diseño a nivel de arquitectura.
+
+➢En aplicaciones OO las clases representan unidades de granularidad muy fina; en sistemas grandes se requiere hablar de unidades que represente una funcionalidad mayor (módulos / subsistemas / componentes de negocio)
+
+➢Emplear alta abstracción en cada nivel.
