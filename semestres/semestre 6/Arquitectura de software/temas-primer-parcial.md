@@ -879,3 +879,41 @@ La jerarquía de los nodos pueden ser modelados utilizando composición o por la
 ➢En aplicaciones OO las clases representan unidades de granularidad muy fina; en sistemas grandes se requiere hablar de unidades que represente una funcionalidad mayor (módulos / subsistemas / componentes de negocio)
 
 ➢Emplear alta abstracción en cada nivel.
+
+## Pasos para la definición de un arquitectura de software
+
+- Creación del caso de negocio para el sistema
+- Entendimiento de los requisitos
+- Creación y Selección de la arquitectura
+- Documentación y comunicación de la arquitectura
+- Análisis o evaluación de la Arq
+- Implementación del sistema basado en la Arq
+- Aseguramiento de que la implementación esté acorde con la arquitectura.
+
+## Pasos básicos para definir arquitecturas
+
+- Definir los módulos principales
+- Definir las responsabilidades que tendrá cada uno de estos módulos
+- Definir la interacción que existirá entre dichos módulos:
+	- Control y flujo de datos
+	- Secuenciación de la información
+	- Protocolos de interacción y comunicación
+	- Ubicación en el hardwarei
+
+
+## Arquitectura vs Diseño
+
+### Nivel de abstracción
+
+- Arquitectura: Alto nivel, el problema en su contexto
+- Diseño: Bajo nivel, pone foco en los detalles
+
+### Entregables
+
+- Arquitectura: Planear susbsistemas, interfaces con sistemas externos, servicios horizontales, frameworks, componentes reutilizables, prototipo arquitectónico
+- Diseño: Diseño detallado
+- Diseño: Especificación de codificación
+
+### Áreas de enfoque
+
+- Selección de tecnologías 
