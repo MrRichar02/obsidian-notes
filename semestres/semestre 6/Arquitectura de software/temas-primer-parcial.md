@@ -1750,4 +1750,48 @@ Se fue pasando de
 - Estructurado
 - Client / Server
 - 3-Tier, N-Tier
-- Objetos distrib
+- Objetos distribuidos
+- Componentes
+- Web Services
+- Servicios
+- Microservicios
+
+### Servicios
+
+• Relación entre procesos que corren en máquinas diferentes.
+	• Proceso SERVIDOR: Proveedor de servicios.
+	• Proceso CLIENTE: Consumidor de servicios.
+	• Hay una separación funcional clara basada en la idea de servicio.
+
+### Recursos compartidos
+
+• Un servidor puede servir a varios clientes al mismo tiempo, regulando el
+acceso de éstos a recursos compartidos. Concurrencias
+
+## Cont
+
+### • Protocolos asimétricos
+	• Relación 1:m entre servidor y cliente.
+	• Los clientes siempre inician el diálogo.
+### • Transparencia de localidad
+	• El servidor es un proceso que puede residir en la misma máquina que el cliente o en otra máquina en una red.
+	• Un programa puede ser servidor, cliente o jugar ambos papeles.
+### • Independencia de Plataforma
+	• El software cliente/servidor deberá ser independiente de la plataforma.
+
+### • Intercambio basado en mensajes
+	• Clientes y servidores interactúan con base en un mecanismo de paso de mensajes.
+	• Generalmente un mensaje es una solicitud o una respuesta.
+### • Encapsulamiento de Servicios
+	• Servidor especializado.
+	• Las peticiones enviadas por los clientes indican el servicio requerido, y el servidor determina cómo se responderá a la solicitud.
+	• Los servidores pueden actualizarse, sin afectar a los clientes siempre y cuando la interfaz de mensajes no cambie.
+
+### • Crecimiento
+	• Los sistemas cliente/servidor crecen horizontal y verticalmente.
+	• Crecimiento horizontal: Adicionar o eliminar estaciones de trabajo clientes con un impacto pequeño en el desempeño del sistema completo.
+	• Crecimiento vertical: cambio a servidores más rápidos y de mayor capacidad.
+### • Seguridad
+	• El código y los datos del servidor tienen un mantenimiento centralizado, lo cual es más económico y seguro.
+
+## Modelo Cliente / Servidor 3 capas
