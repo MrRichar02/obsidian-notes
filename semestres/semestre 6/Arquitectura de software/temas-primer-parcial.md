@@ -1795,3 +1795,60 @@ acceso de éstos a recursos compartidos. Concurrencias
 	• El código y los datos del servidor tienen un mantenimiento centralizado, lo cual es más económico y seguro.
 
 ## Modelo Cliente / Servidor 3 capas
+
+### Nueva capa: Dominio
+
+• Aparece una nueva capa: la de Dominio
+•Debería obviar tanto la estructura de los datos como su ubicación
+	• Permite describir las aplicaciones basándose únicamente en el dominio a modelar
+	• También posibilita cambiar la estructura física de la base de datos y su ubicación sin afectar a las aplicaciones existentes
+
+• La Tecnología de Objetos representa el mejor modo de
+implementar (modelar) dicha capa
+
+## Arquitectura de n capas
+
+• A la hora de la verdad (en el diseño detallado), las arquitecturas en tres capas suelen separarse aún más
+• Así, es posible diferenciar entre lógica de presentación y de aplicación
+	• De un lado, estrictamente la interfaz de usuario
+	• De otro, los servicios utilizados tanto por la capa de presentación como por el dominio
+
++ Bajo costo de administración de clientes.
++ Alta accesibilidad.
++ Alta flexibilidad.
++ Alta disponibilidad y tolerancia a fallos.
++ Alta escalabilidad.
++ Independencia de DB
+
+### Ventajas de N-Capas
+
+• Reutilización
+	• La aplicación está formada por una serie de módulos que se comunican a través de interfaces, y que cooperan entre sí para dar lugar al comportamiento deseado
+	• Idealmente, se trataría de objetos independientes que podrían ser empleados en otras aplicaciones
+
+• Facilidad de mantenimiento
+• Eficiencia en el acceso a los datos y en el uso de la red
+• Posibilita la especialización de los desarrolladores
+
+## Ambientes
+
+- Uniprocesador
+- Multiprocesador simétrico
+- Cluster
+- Procesamiento Masivo paralelo
+
+## Middleware
+
+• Es la herramienta o conjunto de herramientas que nos permitirán gestionar y coordinar los mecanismos de comunicación.
+
+• Actuan como intermediarios con otros componentes de SW
+
+• Ejemplo si se hace la petición de una página web desde un browser en el cliente, el middleware determina la ubicación y envía una petición para dicha página.
+
+• El servidor Web, interpreta la petición y envía la página al software intermedio, quien la dirige al navegador de la máquina cliente que la solicitó.
+
+• Independiza el servicio y su implementación, del S.O. y protocolos de comunicaciones
+
+• Permite la convivencia de distintos servicios en una misma máquina
+- Implementa Modelo OO: CORBA
+
