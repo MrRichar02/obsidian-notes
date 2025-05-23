@@ -1852,3 +1852,116 @@ implementar (modelar) dicha capa
 • Permite la convivencia de distintos servicios en una misma máquina
 - Implementa Modelo OO: CORBA
 
+### Generalidades
+
+#### Comunican 2 sistemas:
+
+• Drivers a DBMSs.
+• Acceso a DBMS desde un programa u otro DBMS.
+• Remote Procedure Call (RPC, RMI, Remoting).
+• Invocación a procedimientos remotos como si fueran locales al programa.
+• Web Services.
+• Invocación a procedimientos a través de HTTP.
+
+#### Comunican múltiples sistemas:
+
+• Message Oriented Middleware (MOM). Puede emplearse
+	• Advanced Message Queuing Protocol (AMQP)
+	• OMG - Data Distribution Service (DDS)
+	• Streaming Text Oriented Messaging Protocol (STOMP)
+	• JMS
+	• Extensible Messaging and Presence Protocol (XMPP) – Facebook, Whatsapp, etc.
+
+• Envío de mensajes entre aplicaciones.
+• Object Request Brokers (ORB).
+• Invocación a procedimientos y propiedades de objetos.
+
+### Midleware como infraestructura
+
+• Java (EJB, RMI, CORBA, etc.), .NET, son infraestructuras middleware.
+• Capa software ejecutable que me permite abstraernos de aspectos cotidianos en la programación de sistemas distribuidos
+	• Primitivas de comunicación basada en RPC, RMI, ...
+	• Soporte a transacciones
+	• Gestión del ciclo de vida de los objetos/Procesos
+	• Nos facilitan la definición de la lógica de negoció
+	• ...
+• ¡Son plataformas ejecutables con un modelo de programación concreto!
+
+### Existen dos tipos:
+
+#### Software intermedio general.
+
+•Servicios generales que requieren todos los clientes y servidores, por ejemplo:
+
+	➢software para las comunicaciones usando el TCP/IP
+	➢ software parte del sistema operativo que, por ejemplo, almacena los archivos distribuidos,
+	➢software de autenticación,
+	➢el software intermedio de mensajes de clientes a servidores y viceversa.
+
+#### Software intermedio de servicios
+
+• Software asociado a un servicio en particular, por ejemplo:
+	➢software que permite a dos BD conectarse a una red cliente/servidor (ODBC: Conectividad abierta de BD),
+	➢software de objetos distribuidos, por ejemplo la tecnología CORBA permite que objetos distribuidos creados en distintos lenguajes coexistan en una misma red (intercambien mensajes),
+	➢software intermedio para software de grupo,
+	➢software intermedio asociado a productos de seguridad específicas (Conexiones Seguras: Sockets), etc.
+
+### Clasificación por niveles
+
+Se distinguen 2 niveles:
+
+• Middleware de Bajo Nivel (Servicios Tecnológicos) Se encargan del transito de servicios básicos hacia el cliente.
+
+• Middleware de Alto Nivel(Servicios de Aplicación) Se encargan del manejo de servicios de infraestructura y de aplicación
+
+## Clasificación de Middleware
+
+### Middleware bajo nivel
+
+### Middleware de base
+
+Estándares y servicios asociados, que sirven de soporte para la construcción del resto del middleware
+
+- CORBA
+- COM / COM+ / DCOM
+- EJB / J2EE
+- .NET
+
+### Middleware de comunicaciones
+
+Proporciona el medio de comunicación para que las aplicaciones puedan conversar entre si
+
+- HTTP
+- RMI-IIOP
+- SOAP
+- RPC
+
+### Middleware de base de datos
+
+Enmascara la complejidad de acceso a la base de datos escondiendo los detalles de implementación de cada uno
+
+- ODBC
+- JDBC
+- OCI
+
+### Middleware de aplicación
+
+Permite el arranque, extensión, e integración de otras aplicaciones
+
+- CGI
+- Servlets/JSP
+- PHP
+- ASP
+- ISAPI/NSAPI
+
+### Middleware de alto nivel
+
+### Servidores web
+
+Servicios de publicación de contenidos
+
+- Apache
+- Netscape Server
+- IIS
+- OmmiHTTPD
+- S
