@@ -52,6 +52,20 @@ password your-password
 login
 ```
 
+si quierieramos desactivar que nos pida la contraseña para entrar a al consola primero entramos a modo config
+
+```
+en
+conf t
+```
+
+Ahora entramos a la consola 0 y desctivamos el login
+
+```
+line console 0
+no login
+```
+
 ## Acceso remoto router
 
 Primero entramos a modo config
@@ -62,3 +76,38 @@ conf t
 ```
 
 Ahora vamos a entrar en la configuración de la consola 0 para vty y vamos a establecer una contraseña y activarla
+
+```
+line vty 0
+password your-password
+login
+```
+
+Con eso listo ahora se podría acceder desde un pc al router para configurarlo, solo debemos de ejecutar algo como lo siguiente en el pc
+
+```
+telnet ip-interface-router
+```
+
+donde `ip-interface-router` es la dirección IP de cualquiera de las interfaces del router
+
+Si quisiéramos desactivar el vty para que no se puede configurar el router desde un pc remoto, debemos de primero entrar al modo config
+
+```
+en
+conf t
+```
+
+luego entramos al vty desactivamos el login
+
+```
+line vty 0
+no login
+```
+
+## Orden para asignar las contraseñas
+
+- consola
+- password
+- secret 
+- vty
