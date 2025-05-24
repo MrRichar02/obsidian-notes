@@ -32,3 +32,33 @@ enable secret yourt-secret
 
 Nota: si ya se definió una password en la primera forma el secret no puede ser igual al definido o sino dará un error
 
+Luego de definir el secret este será el que se nos pide para entrar al modo enable, incluso si ya habíamos definido un password anteriormente este lo va a reemplazar, la ventaja que tiene el secret respecto al password es que si ejecutamos   `sh running-config` no se va a mostar el secret tal como es, sino encriptado 
+
+
+## Console
+
+Primero entramos a modo config
+
+```
+en
+conf t
+```
+
+Ahora vamos a entrar a la configuración de la consola 0 y vamos a definir una password y luego vamos activar que se pida la contraseña al momento de acceder a la consola 
+
+```
+line console 0
+password your-password
+login
+```
+
+## Acceso remoto router
+
+Primero entramos a modo config
+
+```
+en
+conf t
+```
+
+Ahora vamos a entrar en la configuración de la consola 0 para vty y vamos a establecer una contraseña y activarla
