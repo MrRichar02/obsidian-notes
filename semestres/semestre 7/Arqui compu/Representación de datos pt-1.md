@@ -1,5 +1,7 @@
 ## Señales análogas y digitales 
 
+[[Indice arqui de compu]] ir al indice
+
 - Análogas: Adquieren valores en una escala numérica continua osea que existen una cantidad infinita de posibles valores 
 - Digitales: Adquieren valores discretos (no se admiten valores intermedios) osea que existe una cantidad finita de valores 
 
@@ -118,6 +120,8 @@ Dígitos: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 
 ### Números enteros 
 
+#### Divisiones sucesivas
+
 Se puede usar el método de divisiones sucesivas por la otra base usando el residuo, esto se refiere a que si tenemos un numero D que esta en la base decimal  y una r a la que queremos pasar a r vamos a realizar lo siguiente 
 
 vamos a dividir a D por r, al hacer eso vamos a obtener un cociente Q y un residuo R, este residuo va a ser el LSD del numero D transformado a la base r, ahora solo debemos repetir la división pero en lugar de D vamos a usar Q, repetimos esto hasta que el cociente sea 0 y los residuos que vaymos obteniendo van a ir formando a D en la base r y los vamos ir colocando de izquierda a derecha según los obtengamos ya que le primero que obtenemos es el LSD por lo que el ultimo será el MSD
@@ -158,3 +162,138 @@ al usar este ultimo Q nos daría un Q de 0 y dejamos a este Q como el ultimo res
 
 $\Large{{10111011}_2}$
 
+#### Restas sucesivas de potencias de la otra base
+
+Para este método vamos a usar las potencias de la base para ir restando el numero D que deseamos transformar hasta obtener 0, veamos un ejemplo 
+
+convertir 210 a binario
+
+para este caso nuestro D será 210 y r será 2
+
+primero debemos observar cual es la mayor potencia de 2 que no es mayor que 210, en este caso es 2⁷ que es igual a 128 ya que 2⁸ es mayor que 210
+
+al aplicar la resta nos queda 82, entonces nuevamente buscamos la mayor potencia de 2 que no sea mayor a 82, en este caso es 2⁶ que es 64
+
+luego de restar nos queda 18, nuevamente buscamos la base y en este caso es 2⁴
+
+luego de restar nos queda 2, buscamos la base que es 2¹ y al restar nos va a quedar 0
+
+Ahora para formar el numero en binario lo que vamos a hacer es marcar cada base que usamos al restar desde la primera que usamos que en este caso fue 2⁷ hasta la base 2⁰ con 1 y las que no usamos las marcamos con 0, lo que nos daría el siguiente numero 
+
+$\large{{11010010}_2}$
+
+Una forma sencilla de  crear el numero es crear una tabla e ir marcando las potencias que se han utilizado 
+
+| 2⁷ = 128 | 2⁶ = 64 | 2⁵ = 32 | 2⁴ = 16 | 2³ = 8 | 2² = 4 | 2¹ = 2 | 2⁰ = 1 |
+| -------- | ------- | ------- | ------- | ------ | ------ | ------ | ------ |
+| 1        | 1       | 0       | 1       | 0      | 0      | 1      | 0      |
+
+#### Conversión de binario a hexadecimal 
+
+Primero vamos a tomar el numero binario D a transformar y vamos a juntar sus dígitos de 4, luego con esos 4 dígitos vamos a calcular cual sería su valor en hexadecimal usando su posición para aplicar el valor de una potencia de 2 donde las potencias inician de derecha a izquierda de 2⁰ hasta 2³, luego sumamos los valores de las potencias y ahí obtenemos su equivalente en hexadecimal
+
+veamos un ejemplo 
+
+convertir $\large{{1001101000100101100}_2}$ a hexadecimal 
+
+empezamos a crear los grupos iniciando de derecha a izquierda
+
+100 1101 0001 0010 1100
+
+el ultimo grupo nos queda solo con 3 dígitos entonces agregamos un 0 a la izquierda
+
+0100 | 1101 | 0001 | 0010 | 1100
+
+ahora calculamos los valores con las potencias de 2 
+
+2² | 2³ + 2² + 2⁰ | 2⁰ | 2¹ | 2³ + 2² 
+
+Ahora realizamos la suma e asignamos los valores correspondientes de la base hexadecimal
+
+4 | D | 1 | 2 | C
+
+Ya podemos quitar los separadores y dejar el numero, el cual podemos representar de dos formas 
+
+Primera forma: $\large{{4D12C}_{16}}$
+
+Segunda forma: $\large{ox4D12C}$
+
+#### Conversión de binario a octal
+
+Sería igual a lo anterior pero en lugar de formar grupos de 4 dígitos se forman  grupos de 3
+
+## Suma de números binarios 
+
+Para realizar la suma nos podemos ayudar de una tabla de verdad que tienen en cuenta los 8 casos posibles para las 3 variables(2 sumandos y el posible acarreo)
+
+En la siguiente tabla:
+
+- X y Y son los sumandos
+- $\large{C_{in}}$ es el acarreo que hay para ese suma
+- $\large{C_{out}}$ es el acarreo que resulta de la suma
+- S es el resultado de la suma
+
+| X   | Y   | $\large{C_{in}}$ | $\large{C_{out}}$ | S   |
+| --- | --- | ---------------- | ----------------- | --- |
+| 0   | 0   | 0                | 0                 | 0   |
+| 0   | 0   | 1                | 0                 | 1   |
+| 0   | 1   | 0                | 0                 | 1   |
+| 0   | 1   | 1                | 1                 | 0   |
+| 1   | 0   | 0                | 0                 | 1   |
+| 1   | 0   | 1                | 1                 | 0   |
+| 1   | 1   | 0                | 1                 | 0   |
+| 1   | 1   | 1                | 1                 | 1   |
+
+Ahora realicemos un ejemplo
+
+Realizar la suma 
+
+1 0 1 1 1 0 1 0 0 1 +
+0 1 1 0 0 1 1 0 1 0
+
+Vamos a ir realizando la suma de derecha a izquierda e ir colocando el acarreo 
+Acarreo
+1 1 1 1 1 1 0 0 0 
+
+1 0 1 1 1 0 1 0 0 1 +
+0 1 1 0 0 1 1 0 1 0
+
+Resultado
+1 0 0 1 0 0 0 0 0 1 1
+
+El resultado tiene un dígito más 
+
+## Sustracción de números binarios 
+
+Para realizar la sustracción podemos hacer uso de la siguiente tabla de verdad que tiene en cuenta los 8 casos para las 3 variables(minuendo, sustraendo y préstamo)
+
+- X y Y son el minuendo y sustraendo respectivamente 
+- $\large{b_{in}}$ es el préstamo de entrada entregado por el siguiente dígito 
+- $\large{b_{out}}$ es el préstamo de salida  que resulta de la resta anterior 
+- d es el resultado de la resta
+
+| X   | Y   | $\large{b_{in}}$ | $\large{b_{out}}$ | S   |
+| --- | --- | ---------------- | ----------------- | --- |
+| 0   | 0   | 0                | 0                 | 0   |
+| 0   | 0   | 1                | 1                 | 1   |
+| 0   | 1   | 0                | 1                 | 1   |
+| 0   | 1   | 1                | 1                 | 0   |
+| 1   | 0   | 0                | 0                 | 1   |
+| 1   | 0   | 1                | 0                 | 0   |
+| 1   | 1   | 0                | 0                 | 0   |
+| 1   | 1   | 1                | 1                 | 1   |
+
+Realicemos un ejemplo 
+
+Restar 
+
+1 0 1 0 1 0 0 0 0 1
+0 1 1 1 0 0 0 0 0 0
+
+| Préstamo  | 1   | 1   | 1   | 0   | 0   | 0   | 0   | 0   | 0   |     |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| X         | 1   | 0   | 1   | 0   | 1   | 0   | 0   | 0   | 0   | 1   |
+| y         | 0   | 1   | 1   | 1   | 0   | 0   | 0   | 0   | 0   | 0   |
+| Resultado | 0   | 0   | 1   | 1   | 1   | 0   | 0   | 0   | 0   | 1   |
+
+[[Representación de datos pt-2]] para ir al proximo

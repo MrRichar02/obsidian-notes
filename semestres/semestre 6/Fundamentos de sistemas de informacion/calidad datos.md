@@ -54,6 +54,4 @@ Se garantiza que los datos no están duplcados
 
 ### Seguridad
 
-Protección de los datos respecto a terceros no ahutorizados
-
-[[sistemas de informacion]]
+Protección de los datos respecto a terceros no autorizados 

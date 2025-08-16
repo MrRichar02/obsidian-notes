@@ -1,3 +1,4 @@
+
 |       | Lunes                        | Martes      | Miercoles                    | Jueves | Viernes     | Sabado           |
 | ----- | ---------------------------- | ----------- | ---------------------------- | ------ | ----------- | ---------------- |
 | 6-7   | Calidad                      |             | calidad                      |        |             |                  |
@@ -26,4 +27,3 @@ Fundamentos de investigación grupo 1
 lab integrado de física grupo 3
 
 comunicaciones 2 Grupo 1
-
