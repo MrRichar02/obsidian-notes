@@ -87,3 +87,20 @@ En esta representación solo existe una forma de representar el 0, veamos esto e
 0000 sería la única forma de representar el 0 
 
 El rango de representación es el siguiente $\large{[-2^{n-1}, 2^{n-1}-1]}$
+
+### Suma 
+
+La suma se realiza de la misma forma que se presento antes, lo único a vigilar es que existe la posibilidad de superar el rango de los números que se pueden representar, por ejemplo si teniendo un n = 4 sumamos 5 y 6 nos pasaríamos del rango que llega hasta 7, estos casos se conocen como overflow
+
+Las formas en que podemos detectar un overflow son las siguientes :
+
+ - Si el bit de signo es distinto al de los demás sumandos
+ - Si el bit de acarreo de salida que sale sumar los últimos bits es distinto al bit de signo del resultado de la suma 
+
+### Resta
+
+Al realizar la resta no debemos preocuparnos por el overflow ya que no pude suceder a menos que al aplicar la resta justo se convierta en una suma
+
+Para realizar una resta de por ejemplo A - B, en lugar de hacerla asi directamente podemos primero aplicar el signo negativo al B y luego que sea una suma, entonces quedaría asi A + (-B) 
+
+[[algebra booleana pt-1]] para ir al siguiente 
