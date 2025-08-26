@@ -85,3 +85,79 @@ Si tenemos una función ${F_1}$ y la siguiente es su tabla de verdad
 Para representar tanto a ${F_1}$ como a ${F_1´}$ con la forma de producto de maxterms hacemos lo siguiente 
 
 $\Large{F_1(x,y,z) = \prod (0,1,2,4) = M_0 M_1 M_2 M_4 = (xyz) (xyz´) (xy´z) (x´yz)}$
+
+Primero colocamos la productoria con los indices de las filas donde la función da 0, luego usamos la notación de maxterm para representar los indices y finalmente colocamos la forma de producto de maxterm que sería hacer le producto de los distintos maxterm en el orden que van apareciendo(en este caso 0, 1, 2 y 4)
+
+$\Large{F_1´ = \prod (3, 5, 6, 7) = M_3 M_5 M_6 M_7 = (xy´z´) (x´yz´) (x´y´z) (x´y´z´)}$
+
+
+## Pasar de una forma canónica a otra 
+
+Para pasar debemos de intercambiar la sumatoria por productoria o viceversa y los indices que ubicamos en la operación también deben de ser cambiados por los que no están, entonces aplicando esto lo siguiente sería cierto 
+
+$\large{F(X,Y,Z) = \prod (2,3,4,6) = \sum (0,1,5,7)}$
+
+## Formas estándar 
+
+### Suma de productos (SOP)
+
+Es como una forma canónica de suma de minterms pero no es obligatorio que todos los terminos de producto cuenten con todas las variables que se incluyen en la función, un ejemplo es el siguiente 
+
+${F(x,y,z) = xy + xy´z + x´yz}$
+
+
+## Producto de sumas (PoS)
+
+Es como la forma canónica de producto de maxterms pero no es obligatorio que todos los terminos suma incluyan todas las variables de la función, veamos un ejemplo
+
+${F(x,y,z) = (x´+y´)(x+y´+z´)(x´+y+z)}$
+
+### Como se obtienen?
+
+para obtener las formas estándar se usan los teoremas del algebra booleana para simplificar las formas canónicas, esto hace que las formas estándar no  sean únicas para cada función 
+
+Veamos un ejemplo:
+
+${F(x,y,z) = xyz + xyz´ + xy´z + xy´z´ = xy + xy´ = x}$
+
+## BCD
+
+### ¿Qué son?
+
+Es una forma de representar dígitos decimales utilizando 4 bits, tienen una rango desde ${0000_2}$ que representa al 0 hasta ${1001_2}$ que representa al 9, las combinaciones que van desde ${1010}$ que representa al 10 hasta ${1111}$ que representa al 15 no se utilizan 
+
+### Tabla de verdad
+
+| wxyz | F   |
+| ---- | --- |
+| 0000 | 0   |
+| 0001 | 0   |
+| 0010 | 0   |
+| 0011 | 0   |
+| 0100 | 0   |
+| 0101 | 0   |
+| 0110 | 0   |
+| 0111 | 1   |
+| 1000 | 1   |
+| 1001 | 0   |
+| 1010 | x   |
+| 1011 | x   |
+| 1100 | x   |
+| 1101 | x   |
+| 1110 | x   |
+| 1111 | x   |
+Las filas donde la función F regresa como resultado 0 pertenecen al conjunto OFF de F(w,x,y,z)
+Las filas donde la función F regresa como resultado 1 pertenecen al conjunto ON de F(w,x,y,z)
+Las filas donde la función F regresa como resultado x pertenecen al conjunto Don't care (DC) de F(w,x,y,z)
+
+En este caso usamos la x para representar los don't care pero en la realidad no se regresa una x simplemente no se usan 
+
+### Formas canónicas con don't care
+
+En ambas formas se colocan los don't care pero en la suma de minterms se usa la d para representarlos y en el producto de maxterms se usa la D para representarlos, veamos un ejemplo 
+
+$\large{J(w,x,y,z) = m_0 + m_2 + m_4 + m_6 + m_8 + d_{10} + d_{11} + d_{12} + d_{13} + d_{14} + d_{15}}$
+$\large{=\sum (0,2,4,6,8) + d(10,11,12,13,14,15)}$
+
+$\large{J(w,x,y,z) = M_1 + M_3 + M_5 + M_7 + M_9 + D_{10} + D_{11} + D_{12} + D_{13} + D_{14} + D_{15}}$
+$\large{=\prod (1,3,5,7,9) + D(10,11,12,13,14,15)}$
