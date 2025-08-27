@@ -161,3 +161,5 @@ $\large{=\sum (0,2,4,6,8) + d(10,11,12,13,14,15)}$
 
 $\large{J(w,x,y,z) = M_1 + M_3 + M_5 + M_7 + M_9 + D_{10} + D_{11} + D_{12} + D_{13} + D_{14} + D_{15}}$
 $\large{=\prod (1,3,5,7,9) + D(10,11,12,13,14,15)}$
+
+[[algebra booleana pt-3]] para ir al siguiente 
