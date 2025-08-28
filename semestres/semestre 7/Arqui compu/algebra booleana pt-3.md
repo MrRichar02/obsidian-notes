@@ -67,3 +67,66 @@ Si pasaramos a usar 3 variables para las filas o columnas podríamos hacer lo mi
 ### Que va adentro de las celdas de la tabla ?
 
 En las celdas encontramos en la parte inferior izquierda el valor decimal que obtenemos al calcular los bits que se cruzan en esa celda, debemos tomar en cuenta cuales son mas significativos que los otros, luego en la parte superior podemos encontrar si el valor retornado por la función para esa combinación es de 0 o 1 o también la representación del termino usando las variables, las variables estarán negadas si para esa combinación tienen un valor de 0
+
+### Implicantes
+
+Los implicantes son las distintas combinaciones que podemos hacer en la tabla karnaugh usando los elementos del conjunto ON o del DC
+
+### Implicantes primos
+
+Son un tipo especial de implicante que solo se puede representar de una forma y que no es un subgrupo de otro implicante 
+
+### Implicantes primos esenciales 
+
+Son implicantes primos que tienen una celda que pertenece al conjunto ON la cual solo pertenece a ese implicante primo, osea que con ese implicante es la única forma de representar esa celda de 1
+
+### Nota: Los implicantes deben tener una cantidad de celdas que sea potencia de 2 
+
+### Procesos de simplificación
+
+Primero debemos de hallar todos los implicantes primos, luego de estos observamos cuales son los primos esenciales, de estos vamos a observar cuales son las variables que no cambian y estas van a ser las que se conserven en el termino para representar la función, algo a tener en cuenta es que si el valor que no cambia es 0 la variable debe ir negada, luego repetimos para todos los implicantes primos esenciales y si por alguna razón alguna celda con que regresa 1 no queda representada con los implicantes primos esenciales debemos de usar alguno de los implicantes primos, la forma en que lo elegimos es que sea el mas simple
+
+Veamos un ejemplo 
+
+Simplifique la siguiente función usando mapas K
+${F(w,x,y,z) = \sum (0, 2, 3, 5, 6, 7, 8, 10, 11, 14, 15)}$
+
+![[Pasted image 20250827154045.png]]
+
+Aqui los implicantes primos son :
+
+- x´z´
+- y
+- w´xz
+
+Los implicantes primos esenciales son:
+
+- x´z´
+- y
+- w´xz
+
+La forma en que queda la función simplificada es la siguiente: F(w,x,y,z) = x´z´ + y + w´xz
+
+Veamos otro ejemplo 
+
+Simplificar la función ${F(w,x,y,z) = w´y´z´ + wz + xyz + w´y}$
+
+
+| yz/wx |     |        |        | w         | w         |     |
+| ----- | --- | ------ | ------ | --------- | --------- | --- |
+|       |     | 00     | 01     | 11        | 10        |     |
+|       | 00  | $_0$ 1 | $_4$ 1 | $_{12}$ 0 | $_8$ 0    |     |
+|       | 01  | $_1$ 0 | $_5$ 0 | $_{13}$ 1 | $_9$ 1    | z   |
+| y     | 11  | $_3$ 1 | $_7$ 1 | $_{15}$ 1 | $_{11}$ 1 | z   |
+| y     | 10  | $_2$ 1 | $_6$ 1 | $_{14}$ 0 | $_{10}$ 0 |     |
+|       |     |        | x      | x         |           |     |
+Implicantes primos:
+
+- w´z´
+- w´y
+- yz
+- wz
+
+Implicantes primos esenciales:
+
+- w´z´
