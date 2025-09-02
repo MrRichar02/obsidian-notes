@@ -130,3 +130,47 @@ Implicantes primos:
 Implicantes primos esenciales:
 
 - w´z´
+- wz
+
+Solo con los esenciales no podemos representar todos los 1's entonces debemos usar algún implicante primo para representar todos los 1's, en este caso podemos usar tanto w´y como yz
+
+Entonces podemos expresar la función de las siguientes dos maneras:
+
+- w´z´ + wz + yz
+- w´z´ + wz + w´y
+
+### Simplificación cuando tenemos conjunto DC
+
+La diferencia aquí es que podemos usar los elementos del DC para completar los implementos primos, pero en los implementos primos no debemos de incluir todos los elementos del conjunto DC, osea que los usamos como una ayuda para completar implementos primos más grandes 
+
+veamos un ejemplo 
+
+simplificar ${F(w,x,y,z) = \sum (4,5,6,8,9,10,13) + d(0,7,15)}$
+
+| yz/wx |     |        |        | w         | w         |     |
+| ----- | --- | ------ | ------ | --------- | --------- | --- |
+|       |     | 00     | 01     | 11        | 10        |     |
+|       | 00  | $_0$ X | $_4$ 1 | $_{12}$ 0 | $_8$ 1    |     |
+|       | 01  | $_1$ 0 | $_5$ 1 | $_{13}$ 1 | $_9$ 1    | z   |
+| y     | 11  | $_3$ 0 | $_7$ X | $_{15}$ X | $_{11}$ 0 | z   |
+| y     | 10  | $_2$ 0 | $_6$ 1 | $_{14}$ 0 | $_{10}$ 1 |     |
+|       |     |        | x      | x         |           |     |
+
+Implicantes primos:
+
+- w´x  | casillas: 0, 5, 6, 7
+- w´y´z´ | casillas 0, 4
+- xz | casillas 5, 7, 13, 15
+- wx´y´ | casillas: 8, 9 
+- x´y´z´ | casillas: 0, 8
+- wx´z´ | casillas 8, 10
+- wy´z | casillas 9, 13
+
+Implicantes primos esenciales:
+
+- w´x
+- wx´z´ 
+
+Para representar la función no nos vale con solo usar los primos esenciales, asi que se escogen los implicantes primos que hagan mas simple la función
+
+F(w,x,y,z) = w´x + wx´z´ + wy´z
