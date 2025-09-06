@@ -174,3 +174,8 @@ Implicantes primos esenciales:
 Para representar la función no nos vale con solo usar los primos esenciales, asi que se escogen los implicantes primos que hagan mas simple la función
 
 F(w,x,y,z) = w´x + wx´z´ + wy´z
+
+### Ejemplo [[mapa karnaugh de cinco variables]]
+
+
+[[componentes combinacionales pt-1]] para ir al siguiente
