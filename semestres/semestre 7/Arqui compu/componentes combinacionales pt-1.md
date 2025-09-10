@@ -106,3 +106,11 @@ Se encarga de seleccionar un valor de la entrada y dirigirlo a la salida para es
 | 11          | $D_3$ |
 
 Para este tabla ${Y = D_3 S_1 S_0 + D_2 S_1 S_0´ + D_1 S_1´ S_0 + D_0 S_1´ S_0´}$
+
+### Ejemplo simplificación mux
+
+digamos que deseamos crear un mux 8:1 en este caso sería necesario tener 3 switches, lo que genera una tabla de verdad más grande, algo que podemos hacer para simplificar esto es tener dos mux de 4:1 y la salida de estos será dirigida a un mux 2:1, esto resulta más simple y nos da el mismo resultado.
+
+Esto funciona debido a que en la tabla de verdad al asignar los distintos valores a las variables la tercera variable del switch, tendrá en la primera mitad todos 0 y en la segunda mitad todo 1, entonces estamos en si separando estos dos casos con los mux 4:1
+
+[[componentes combinacionales pt-2]] para ir al siguiente 
