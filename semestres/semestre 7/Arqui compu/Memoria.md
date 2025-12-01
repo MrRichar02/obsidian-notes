@@ -13,15 +13,13 @@ Se refiere a que es probable que se acceda a los datos que están almacenados ce
 ### AMAT (Average Memory Access Time)
 Hit Time + (1 - h) Miss penalty
 
-## Partes de la cache
+## Bloque
 
-### Bloque
-
-#### Partes del bloque
+### Partes del bloque
 
 El bloque se compone de un Index, bit de validez, tag y finalmente la data  
 
-Dirección de bloque: Para obtener la dirección de bloque se debe tener la dirección de byte y el tamaño de los bloques, para calcularla se toma la dirección de byte y se le quita una cantidad de bytes empezando desde los menos significativos, la cantidad de bytes a quitar serán los necesarios para cubrir un numero de combinaciones que sea igual tamaño del bloque, entonces si el tamaño del bloque es de una palabra osea que tiene 4 bytes, se necesita cubrir 4 combinaciones y para esto se necesitan 2 bits
+Dirección de bloque: Para obtener la dirección de bloque se le van a quitar una cantidad de bits a la dirección de byte, esta cantidad va a depender de cuantos bytes se genera una palabra en el caso de la arquitectura de 32 se forma de 4 entonces se deben quitar los 2 bits menos significativos que son los que nos permiten generar 4 combinaciones.
 
 Index de la cache: $\large{\text{Dirección de bloque } \% \text{ \# de bloques en la cache}}$. 
 
@@ -31,3 +29,6 @@ Bit de validez: Sirve para representar hay información útil en el bloque que e
 
 Tag: El tag representa la parte de la dirección de byte queda luego de retirar los bits menos significativos para obtener la dirección de bloque y los bits que representan la dirección de bloque, con los bits restantes podemos diferenciar entre datos que tienen la misma dirección de bloque 
 
+### Bloque con tamaño mayor a una palabra
+
+Cuando se tiene un bloque con un tamaño mayor a una palabra se debe de tener una forma para identificar cual palabra va ser donde se van a guardar los datos, para esto se debe de tener en cuenta el tamaño del bloque en cuanto a palabras y cuantos bits son necesarios para representar todas las posibles combinaciones según el tamaño, por ejemplo si el tamaño es de dos palabras solo se necesita un bit para representar las dos posibles combinaciones estos bits van ser bits adicionales que se toman de la dirección de byte antes de crear la dirección de bloque.
