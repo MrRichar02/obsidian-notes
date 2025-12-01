@@ -71,4 +71,37 @@ and $t5, $t0, $t6
 or $t7, $t0, $t8
 nor $t9, $t0, $t9
 ~~~
-En este caso las instrucciones sub y and  dependen del resultado que arroje la instrucción add pero al momento que ellas van a realizar su etapa de ID la instrucción add aún no a escrito el resultado sobre el registro, lo simple aquí sería esperar hasta que la instrucción add escriba el resultado sobre el registro y luego ejecutar las instrucciones
+En este caso las instrucciones sub y and  dependen del resultado que arroje la instrucción add pero al momento que ellas van a realizar su etapa de ID la instrucción add aún no a escrito el resultado sobre el registro, lo simple aquí sería esperar hasta que la instrucción add escriba el resultado sobre el registro y luego ejecutar las instrucciones.
+
+Una solución que favorece al rendimiento es usar algo conocido como forwarding o bypassing, esto se basa en que, el resultado que necesita otra instrucción ya existe antes de que se guarde en un registro entonces podemos adelantar el paso de esta valor a otra instrucción. Una instrucción que realice una operación ALU va a tener su resultado listo después de la etapa de EX, mientras que una instrucción que acceda a memoria tendrá su resultado listo después de la etapa de MEM, la forma gráfica en que se muestra esto es que el cable que va de la etapa anterior ademas de ir a la próxima etapa de su instrucción también tiene un cable a la próxima etapa de la instrucción que depende de el valor que aún no esta en el registro, para ilustrar de una mejor manera observemos la siguiente imagen.
+![[Pasted image 20251117094843.png]]
+
+El forwarding no puede cubrir todos los riesgos de datos, por ejemplo en el siguiente caso:
+
+```
+lw $s0, 20($t1)
+sub $t2, $s0, $t3
+and $t4, $s0, $t5
+or $t6, $s1, $t7
+```
+en este caso sub depende del valor que va se va a obtener de memoria con lw, pero como la instrucción sub esta justo después de la lw, se necesita como mínimo esperar durante una ciclo de reloj para que en la etapa de MEM se obtenga el valor, la solución aquí sería reordenar el código de una forma que el ciclo de reloj que tendría que esperar el sub lo ocupe otra instrucción teniendo en cuenta que no se modifique el valor que daría la versión original y que la instrucción que reemplaza el espacio no tenga un riesgo en esa posición, en nuestro caso ese espacio lo puede ocupar la instrucción or
+```
+lw $s0, 20($t1)
+or $t6, $s1, $t7
+sub $t2, $s0, $t3
+and $t4, $s0, $t5
+```
+### Riesgos de control 
+Estos riesgos tienen que ver con las instrucciones de control como el `beq` o el `bnq`, ya que hasta que se produzca el resultado de si se toma el salto o no, no podemos saber si debemos empezar a procesar las instrucciones que siguen a la comparación o a las que están en el destino del salto.
+
+la solución simple conocida como Stall on branch es esperar hasta que la instrucción complete la etapa de EX y ahí con el resultado ya se puede saber si se toma o no el salto esto conlleva a esperar durante dos ciclos de reloj, una mejora a esta solución es añadir un comparador a la etapa ID, para que luego de la decodificación se comparen los registros y se tome la decisión de realizar o no el salto y se define el valor de pc, esta mejora hace que el tiempo de espera sea de un ciclo de reloj, pero tiene como consecuencia que las etapas EX, MEM y WB de la instrucción de control no van a realizar algo y solo consumirán tiempo.
+
+Otra mejora que se puede hacer al Stall on branch es usar algo conocido como Branch delay slot lo que esto propone es rellenar el único ciclo de reloj de espera que tenemos ahora con una de las instrucciones que suceden antes del la instrucción de control o instrucciones suceden cuando no se toma el salto, esta instrucción siempre se ejecutará por completo entonces esta no puede afectar al flujo del programa en el caso de que el salto se tome o no se tome, por esta condición a veces no se puede ubicar alguna instrucción y es necesario esperar durante un ciclo de reloj, pero en el caso de que exista un instrucción que se pueda ubicar no se tendrán esperas.
+
+veamos unos ejemplos tomados de las diapos de la materia 
+
+![[Pasted image 20251117124127.png]]
+
+Otra solución es conocida como predicción estática, esta se refiera a que vamos a predecir o que se va tomar o no el salto, respecto a la instrucción vamos a colocar la instrucción que ocupa el espacio de espera, esta instrucción solo completará su primera etapa de IF luego llegará el resultado de la instrucción de control, si la predicción fue correcta la instrucción continua y si la predicción fue incorrecta se anula la instrucción para anularla se reemplazan sus demás etapas por operaciones null también conocidas como nop
+
+Una solución más avanzada es la predicción dinámica, esta es muy simular a la anterior solo que las predicciones se basan en el contexto de la aplicación y se toma la decición de la predicción a alta velocidad 
