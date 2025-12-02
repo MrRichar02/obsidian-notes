@@ -19,7 +19,7 @@ Hit Time + (1 - h) Miss penalty
 
 El bloque se compone de un Index, bit de validez, tag y finalmente la data  
 
-Dirección de bloque: Para obtener la dirección de bloque se le van a quitar una cantidad de bits a la dirección de byte, esta cantidad va a depender de cuantos bytes se genera una palabra en el caso de la arquitectura de 32 se forma de 4 entonces se deben quitar los 2 bits menos significativos que son los que nos permiten generar 4 combinaciones.
+Dirección de bloque: Para calcularla debemos eliminar una cantidad de bits menos significativos a la dirección de byte, la cantidad de bits a eliminar serán la cantidad que sea necesaria para representar un numero de combinaciones igual al tamaño de un bloque en cuanto a bytes, por ejemplo si tenemos bloques de tamaño de una palabra (4 bytes) debemos tener bits suficientes para realizar 4 combinaciones, en este caso sería necesarios 2 bits, los bits necesarios se conocen como offset y se quitan para finalmente tener la dirección de bloque
 
 Index de la cache: $\large{\text{Dirección de bloque } \% \text{ \# de bloques en la cache}}$. 
 
@@ -29,6 +29,21 @@ Bit de validez: Sirve para representar hay información útil en el bloque que e
 
 Tag: El tag representa la parte de la dirección de byte queda luego de retirar los bits menos significativos para obtener la dirección de bloque y los bits que representan la dirección de bloque, con los bits restantes podemos diferenciar entre datos que tienen la misma dirección de bloque 
 
-### Bloque con tamaño mayor a una palabra
+## Bloque con tamaño mayor a una palabra
 
-Cuando se tiene un bloque con un tamaño mayor a una palabra se debe de tener una forma para identificar cual palabra va ser donde se van a guardar los datos, para esto se debe de tener en cuenta el tamaño del bloque en cuanto a palabras y cuantos bits son necesarios para representar todas las posibles combinaciones según el tamaño, por ejemplo si el tamaño es de dos palabras solo se necesita un bit para representar las dos posibles combinaciones estos bits van ser bits adicionales que se toman de la dirección de byte antes de crear la dirección de bloque.
+Cuando un bloque tiene un tamaño mayor a una palabra se necesita una forma de elegir entre las palabras dentro del bloque para realizar la comparación de si son el dato que se busca con el tag, para hacer esto dividimos el offset en dos, los dos bits menos significativos serán el offset de byte y el resto serán el offset de bloque, con este offset de bloque es que definimos cual palabra del bloque es a la que se hace referencia. 
+
+Veamos un ejemplo de como partir la dirección de byte para obtener las distintas partes 
+![[Pasted image 20251201194814.png]]
+
+
+## Tipos de caches
+
+### Emplazamiento directo (Direct-mapped cache)
+Un bloque ocupa un solo lugar de la cache
+
+### Completamente asociativa (Fully associative)
+Un bloque puede ocupar cualquier lugar de la cache por ende para verificar si un dato esta presente en la cache se deben de revisar todas las posiciones de la cache, esto suele realizarse de forma paralela pero aún así es muy costoso
+
+### Asociativa por conjuntos de n-vías (n-way set associative)
+Tenemos subconjuntos de una cantidad de bloques, para mapear un dato usamos la siguiente operación $\large{\text{dirección de bloque } \% \text{ \# conjuntos de bloques}}$ y también podemos tomar los bits menos significativos necesarios para realizar una cantidad de combinaciones iguales al tamaño de subconjuntos que se tenga en la memoria cache. Para buscar un dato que mapea a un subconjunto se revisan todos los bloques del subconjunto y si el dato no esta se puede remplazar el valor de uno de los bloques del subconjunto teniendo un criterio, el criterio puede ser remplazar el que lleva más tiempo sin ser utilizado para esto se debería de tener un conjunto de bits que pueden representar un numero de combinaciones iguales a la cantidad de bloques por subconjunto para ir clasificando los bloques, otra solución más simple es realizar el remplazo de forma aleatoria.
