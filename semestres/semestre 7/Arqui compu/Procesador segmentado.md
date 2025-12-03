@@ -104,4 +104,4 @@ veamos unos ejemplos tomados de las diapos de la materia
 
 Otra solución es conocida como predicción estática, esta se refiera a que vamos a predecir o que se va tomar o no el salto, respecto a la instrucción vamos a colocar la instrucción que ocupa el espacio de espera, esta instrucción solo completará su primera etapa de IF luego llegará el resultado de la instrucción de control, si la predicción fue correcta la instrucción continua y si la predicción fue incorrecta se anula la instrucción para anularla se reemplazan sus demás etapas por operaciones null también conocidas como nop
 
-Una solución más avanzada es la predicción dinámica, esta es muy simular a la anterior solo que las predicciones se basan en el contexto de la aplicación y se toma la decición de la predicción a alta velocidad 
+Una solución más avanzada es la predicción dinámica, esta es muy simular a la anterior solo que las predicciones se basan en el contexto de la aplicación y se toma la decisión de la predicción a alta velocidad 

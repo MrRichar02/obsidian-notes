@@ -36,7 +36,6 @@ Cuando un bloque tiene un tamaño mayor a una palabra se necesita una forma de e
 Veamos un ejemplo de como partir la dirección de byte para obtener las distintas partes 
 ![[Pasted image 20251201194814.png]]
 
-
 ## Tipos de caches
 
 ### Emplazamiento directo (Direct-mapped cache)
